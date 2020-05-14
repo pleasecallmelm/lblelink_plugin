@@ -47,8 +47,18 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: Column(
+          children: <Widget>[
+            FlatButton(onPressed: (){
+              Lblelinkplugin.initLBSdk("14342", "c67255e53e3feee87673bc67f6895360");
+            }, child: Text("初始化")),
+            FlatButton(onPressed: (){
+              Lblelinkplugin.connectToService();
+            }, child: Text("连接设备")),
+            FlatButton(onPressed: (){
+              Lblelinkplugin.play('http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4');
+            }, child: Text("开始投屏"))
+          ],
         ),
       ),
     );

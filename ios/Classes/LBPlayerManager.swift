@@ -10,6 +10,8 @@ import LBLelinkKit
 
 class LBPlayerManager: NSObject {
     
+    static let shareInstance = LBPlayerManager()
+    
     //开始播放
     func beginPlay(connection: LBLelinkConnection,playUrl: String){
        

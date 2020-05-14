@@ -17,7 +17,7 @@ class Lblelinkplugin {
   static getServicesList() {
     _eventChannel.receiveBroadcastStream().listen((data){
 
-    
+
     });
   }
 

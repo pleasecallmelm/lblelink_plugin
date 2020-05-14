@@ -32,6 +32,8 @@ class LMLBSDKManager: NSObject {
         
         LBLelinkKit.registerAsInteractiveAdObserver()
         
+        self.beginSearchEquipment()
+        
     }
     
     //开始搜索设备
@@ -130,16 +132,20 @@ extension LMLBSDKManager: LBLelinkConnectionDelegate{
     //连接成功
    func lelinkConnection(_ connection: LBLelinkConnection, didConnectTo service: LBLelinkService) {
        
+    print("连接成功");
+    
    }
 
     //连接断开
     func lelinkConnection(_ connection: LBLelinkConnection, disConnectTo service: LBLelinkService) {
         
+        print("连接断开");
     }
     
     //连接出错
     func lelinkConnection(_ connection: LBLelinkConnection, onError error: Error) {
         
+        print("连接出错");
     }
     
     //收到互动广告
