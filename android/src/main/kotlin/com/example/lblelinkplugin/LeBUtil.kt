@@ -29,7 +29,7 @@ class LeBUtil private constructor() {
                 }.toList()
                 Observable.just(resultList).observeOn(AndroidSchedulers.mainThread()).subscribe {
                     events?.success(
-                            buildResult(ResultType.seasch, finalList)
+                            buildResult(ResultType.divice, finalList)
                     )
                 }
 

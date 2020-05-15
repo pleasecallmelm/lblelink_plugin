@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-
+import 'package:lblelinkplugin/tv_list.dart';
 
 class Lblelinkplugin {
   static const MethodChannel _channel = const MethodChannel('lblelinkplugin');
@@ -10,42 +10,41 @@ class Lblelinkplugin {
       const EventChannel("lblelink_event");
 
   //设备列表回调
-  static ValueChanged<List<String>> _serviecListener;
-
+  static ValueChanged<List<TvData>> _serviecListener;
 
   //eventChannel监听分发中心
-  static eventChannelDistribution(){
-
+  static eventChannelDistribution() {
     _eventChannel.receiveBroadcastStream().listen((data) {
       print(data);
       int type = data["type"];
 
-      switch (type){
+      switch (type) {
         case -1:
-          
+          break;
+        case 0:
+          TvListResult _tvList = TvListResult();
+          _tvList.getResultFromMap(data["data"]);
+          _serviecListener?.call(_tvList.tvList);
           break;
         default:
           break;
       }
     });
-
   }
-
 
   //初始化sdk
   //返回值：初始化成功与否
-  static Future<bool> initLBSdk(String appid, String secretKey) async{
+  static Future<bool> initLBSdk(String appid, String secretKey) async {
     await _channel
         .invokeMethod("initLBSdk", {"appid": appid, "secretKey": secretKey});
 
     //初始化的时候注册eventChannel回调
     eventChannelDistribution();
-
   }
 
   //获取设备列表
   //回调：设备数组
-  static getServicesList(ValueChanged<List<String>> serviecListener) {
+  static getServicesList(ValueChanged<List<TvData>> serviecListener) {
     //开始搜索设备
     _channel.invokeMethod("beginSearchEquipment");
 
@@ -64,12 +63,9 @@ class Lblelinkplugin {
 
   //连接设备(参数未定)
   static connectToService(String tvUID) {
-    _channel.invokeMethod("connectToService",{"tvUID":tvUID});
+    _channel.invokeMethod("connectToService", {"tvUID": tvUID});
     //连接设备的回调
-    _eventChannel.receiveBroadcastStream().listen((data) {
-
-
-    });
+    _eventChannel.receiveBroadcastStream().listen((data) {});
   }
 
   //断开连接

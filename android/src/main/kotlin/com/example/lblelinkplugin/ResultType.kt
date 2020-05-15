@@ -13,5 +13,4 @@ object ResultType {
     var info = 8;
     var error = 9;
     var position = 10;
-    var seasch = 11;
 }
