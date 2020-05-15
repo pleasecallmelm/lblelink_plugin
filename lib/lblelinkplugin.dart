@@ -1,56 +1,95 @@
 import 'dart:async';
-
+import 'dart:ui';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
+
 
 class Lblelinkplugin {
   static const MethodChannel _channel = const MethodChannel('lblelinkplugin');
-  static const EventChannel _eventChannel = const EventChannel("lblelink_event");
+  static const EventChannel _eventChannel =
+      const EventChannel("lblelink_event");
+
+  //设备列表回调
+  static ValueChanged<List<String>> _serviecListener;
+
+
+  //eventChannel监听分发中心
+  static eventChannelDistribution(){
+
+    _eventChannel.receiveBroadcastStream().listen((data) {
+
+
+
+
+
+    });
+
+  }
+
 
   //初始化sdk
-  static initLBSdk(String appid, String secretKey) {
-    _channel
+  //返回值：初始化成功与否
+  static Future<bool> initLBSdk(String appid, String secretKey) async{
+    await _channel
         .invokeMethod("initLBSdk", {"appid": appid, "secretKey": secretKey});
+
+    //初始化的时候注册eventChannel回调
+    eventChannelDistribution();
+
   }
 
   //获取设备列表
   //回调：设备数组
-  static getServicesList() {
-    _eventChannel.receiveBroadcastStream().listen((data){
+  static getServicesList(ValueChanged<List<String>> serviecListener) {
+    //开始搜索设备
+    _channel.invokeMethod("beginSearchEquipment");
+
+    _serviecListener = serviecListener;
+
+//    _eventChannel.receiveBroadcastStream().listen((data) {
+//
+//      List<String> result = [];
+//      data.forEach((data) {
+//        String name = data as String;
+//        result.add(name);
+//      });
+//        messageListener(result);
+//    });
+  }
+
+  //连接设备(参数未定)
+  static connectToService() {
+    _channel.invokeMethod("connectToService");
+    //连接设备的回调
+    _eventChannel.receiveBroadcastStream().listen((data) {
 
 
     });
   }
 
-  //连接设备(参数未定)
-  static connectToService(){
-
-    _channel.invokeMethod("connectToService");
-
-  }
-
   //断开连接
-  static disConnect(){
+  static disConnect() {
     _channel.invokeMethod("disConnect");
   }
 
   //暂停
-  static pause(){
+  static pause() {
     _channel.invokeMethod("pause");
   }
 
   //继续播放
-  static resumePlay(){
+  static resumePlay() {
     _channel.invokeMethod("resumePlay");
   }
 
   //退出播放
-  static stop(){
+  static stop() {
     _channel.invokeMethod("stop");
   }
 
   //播放
-  static play(String playUrlString){
-    _channel.invokeMethod("play",{"playUrlString":playUrlString});
+  static play(String playUrlString) {
+    _channel.invokeMethod("play", {"playUrlString": playUrlString});
   }
 
   static Future<String> get platformVersion async {

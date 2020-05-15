@@ -66,10 +66,25 @@ extension LBPlayerManager: LBLelinkPlayerDelegate{
     //播放状态回调
     func lelinkPlayer(_ player: LBLelinkPlayer!, playStatus: LBLelinkPlayStatus) {
         
+        /**
+         LBLelinkPlayStatusUnkown = 0,    // 未知状态
+         LBLelinkPlayStatusLoading,       // 视频正在加载状态
+         LBLelinkPlayStatusPlaying,       // 正在播放状态
+         LBLelinkPlayStatusPause,         // 暂停状态
+         LBLelinkPlayStatusStopped,       // 退出播放状态
+         LBLelinkPlayStatusCommpleted,    // 播放完成状态
+         LBLelinkPlayStatusError,         // 播放错误
+         */
+        
+        
+        
+        
     }
     
     //播放错误回调
     func lelinkPlayer(_ player: LBLelinkPlayer!, onError error: Error!) {
+        
+        
         
     }
     

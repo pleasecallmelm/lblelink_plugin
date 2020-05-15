@@ -17,7 +17,10 @@ public class SwiftLblelinkpluginPlugin: NSObject, FlutterPlugin {
     
     switch call.method {
         case "initLBSdk":
-        LMLBSDKManager.shareInstance.initLBSDK(appid: dict?["appid"] ?? "", secretKey: dict?["secretKey"] ?? "");
+        LMLBSDKManager.shareInstance.initLBSDK(appid: dict?["appid"] ?? "", secretKey: dict?["secretKey"] ?? "",result: result);
+        break
+        case "beginSearchEquipment":
+            LMLBSDKManager.shareInstance.beginSearchEquipment()
         break
         case "connectToService":
             LMLBSDKManager.shareInstance.linkToService();
@@ -41,8 +44,6 @@ public class SwiftLblelinkpluginPlugin: NSObject, FlutterPlugin {
         result(FlutterMethodNotImplemented)
         break;
     }
-    
-    
     
     result("iOS " + UIDevice.current.systemVersion)
   }

@@ -14,6 +14,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
 
+  List<String> _serviceNames = ["1111","2222"];
+
+
   @override
   void initState() {
     super.initState();
@@ -47,17 +50,41 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Column(
+        body: Row(
           children: <Widget>[
-            FlatButton(onPressed: (){
-              Lblelinkplugin.initLBSdk("14342", "c67255e53e3feee87673bc67f6895360");
-            }, child: Text("初始化")),
-            FlatButton(onPressed: (){
-              Lblelinkplugin.connectToService();
-            }, child: Text("连接设备")),
-            FlatButton(onPressed: (){
-              Lblelinkplugin.play('http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4');
-            }, child: Text("开始投屏"))
+            Column(
+              children: <Widget>[
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.initLBSdk("14342", "c67255e53e3feee87673bc67f6895360");
+                }, child: Text("初始化")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.getServicesList((data){
+
+                    print("da is ${data}");
+
+                    setState(() {
+                     _serviceNames.addAll(data);
+
+                    });
+                  });
+                }, child: Text("搜索设备")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.connectToService();
+                }, child: Text("连接设备")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.play('http://pullhls80d25490.live.126.net/live/7d9cc146131245ddbf2126d56c699191/playlist.m3u8');
+                }, child: Text("开始投屏"))
+              ],
+            ),
+           Container(
+             height: 400,
+             width: 300,
+             child:  ListView.builder(
+                 itemCount: _serviceNames.length,
+                 itemBuilder: (ctx,index){
+                   return Text(_serviceNames[index]);
+                 }),
+           )
           ],
         ),
       ),
