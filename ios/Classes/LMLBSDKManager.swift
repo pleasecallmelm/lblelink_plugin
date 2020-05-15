@@ -49,12 +49,27 @@ class LMLBSDKManager: NSObject {
     }
     
     //连接设备
-    func linkToService() {
+    func linkToService(tvUID: String) {
         
+        var currentService:LBLelinkService?
         
+        for item in self.services {
+            if (item.tvUID == tvUID){
+                currentService = item;
+                break;
+            }
+        }
         
-        self.linkConnection.lelinkService = self.services[0]
-        self.linkConnection.connect();
+        if let c = currentService{
+         
+            self.linkConnection.lelinkService = c
+            self.linkConnection.connect();
+            
+        }else{
+            
+            print("设备无效/找不到该设备");
+            
+        }
         
     }
     

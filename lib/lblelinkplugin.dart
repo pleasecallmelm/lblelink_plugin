@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:html';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
@@ -17,11 +18,15 @@ class Lblelinkplugin {
   static eventChannelDistribution(){
 
     _eventChannel.receiveBroadcastStream().listen((data) {
+      int type = data["type"];
 
-
-
-
-
+      switch (type){
+        case -1:
+          
+          break;
+        default:
+          break;
+      }
     });
 
   }
@@ -58,8 +63,8 @@ class Lblelinkplugin {
   }
 
   //连接设备(参数未定)
-  static connectToService() {
-    _channel.invokeMethod("connectToService");
+  static connectToService(String tvUID) {
+    _channel.invokeMethod("connectToService",{"tvUID":tvUID});
     //连接设备的回调
     _eventChannel.receiveBroadcastStream().listen((data) {
 

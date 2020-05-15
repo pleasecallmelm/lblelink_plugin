@@ -8,6 +8,22 @@
 import UIKit
 import LBLelinkKit
 
+enum ResultType: Int {
+    case disConnect = -1;
+    case divice = 0;
+    case connect = 1;
+    case load = 2;
+    case start = 3;
+    case pause = 4;
+    case complete = 5;
+    case stop = 6;
+    case seek = 7;
+    case info = 8;
+    case error = 9;
+    case position = 10;
+}
+
+
 class LMLBEventChannelSupport: NSObject,FlutterPlugin, FlutterStreamHandler{
     
     static let sharedInstance = LMLBEventChannelSupport()
@@ -35,20 +51,28 @@ class LMLBEventChannelSupport: NSObject,FlutterPlugin, FlutterStreamHandler{
     //发送设备列表到flutter
     func sendServicesToFlutter(services: [LBLelinkService]){
         
-        
         if let sink = self.eventSink{
         
-            var a: Array = Array<String>();
+            var a: Array = Array<[String:String]>();
             
             for item in services {
-                a.append(item.lelinkServiceName);
-                let dict = item.dict()
                 
+                let dict: [String:String] = [
+                    "tvName": item.lelinkServiceName,
+                    "tvUID": item.tvUID
+                ];
+                a.append(dict);
             }
-            sink(a);
+            
+            sink(self.createResult(type: .divice, data: a));
         }
     }
     
-
+    
+    func createResult(type:ResultType,data:Any)->Dictionary<String, Any>{
+        
+        return ["type":type.rawValue,"data":data]
+        
+    }
     
 }
