@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:html';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
@@ -18,6 +17,7 @@ class Lblelinkplugin {
   static eventChannelDistribution(){
 
     _eventChannel.receiveBroadcastStream().listen((data) {
+      print(data);
       int type = data["type"];
 
       switch (type){

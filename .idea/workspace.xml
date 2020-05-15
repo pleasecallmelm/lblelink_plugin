@@ -1,14 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15d4ab90-015d-4cb6-af89-8dacaeaf28e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcuserdata/yunxiwangluo.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcuserdata/yunxiwangluo.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcuserdata/yunxiwangluo.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcuserdata/yunxiwangluo.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+    <list default="true" id="1328d671-ac40-49ba-a605-86f0569018db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/example/lblelinkplugin/LeBUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/example/lblelinkplugin/ResultType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_3_50_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lblelink_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lblelink_plugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/lblelinkplugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/lblelinkplugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/example/lblelinkplugin/LblelinkpluginPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/example/lblelinkplugin/LblelinkpluginPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/flutter_assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/flutter_assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/flutter_assets/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/flutter_assets/fonts/MaterialIcons-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/flutter_assets/isolate_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/flutter_assets/vm_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon20x20@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon20x20~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon29x29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon29x29@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon29x29~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon40x40@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon40x40~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon76x76@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon76x76~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/AppIcon83.5x83.5@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Base.lproj/Main.storyboardc/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/Flutter.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/Flutter.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/Flutter.framework/icudtl.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftCore.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftCoreFoundation.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftCoreGraphics.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftDarwin.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftDispatch.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftFoundation.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/Frameworks/libswiftObjectiveC.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.app/embedded.mobileprovision" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/Project/arm.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/Project/arm64.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/Project/armv7.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/arm.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/arm.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/arm64-apple-ios.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/arm64-apple-ios.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/arm64.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/arm64.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/armv7-apple-ios.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/armv7-apple-ios.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/armv7.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/Runner.swiftmodule/armv7.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/lblelinkplugin/Swift Compatibility Header/lblelinkplugin-Swift.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/lblelinkplugin/lblelinkplugin-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/lblelinkplugin/lblelinkplugin.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/lblelinkplugin/lblelinkplugin.swiftmodule/arm.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/lblelinkplugin/lblelinkplugin.swiftmodule/arm64-apple-ios.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/lblelinkplugin/lblelinkplugin.swiftmodule/arm64.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/lblelinkplugin/lblelinkplugin.swiftmodule/armv7-apple-ios.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphoneos/lblelinkplugin/lblelinkplugin.swiftmodule/armv7.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Pods_Runner.framework/Headers/Pods-Runner-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Pods_Runner.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Pods_Runner.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Pods_Runner.framework/Pods_Runner" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Pods_Runner.framework/_CodeSignature/CodeDirectory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Pods_Runner.framework/_CodeSignature/CodeRequirements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Pods_Runner.framework/_CodeSignature/CodeRequirements-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Pods_Runner.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Pods_Runner.framework/_CodeSignature/CodeSignature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon20x20@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon20x20~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon29x29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon29x29@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon29x29~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon40x40@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon40x40~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon76x76@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon76x76~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/AppIcon83.5x83.5@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Assets.car" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/isolate_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/vm_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/Flutter.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/Flutter.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/Flutter.framework/icudtl.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/lblelinkplugin.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/lblelinkplugin.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/lblelinkplugin.framework/lblelinkplugin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/libswiftCore.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/libswiftCoreFoundation.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/libswiftCoreGraphics.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/libswiftDarwin.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/libswiftDispatch.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/libswiftFoundation.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/libswiftObjectiveC.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/Runner" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.swiftmodule/Project/x86_64.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Headers/LblelinkpluginPlugin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Headers/lblelinkplugin-Swift.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Headers/lblelinkplugin-umbrella.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Modules/lblelinkplugin.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Modules/lblelinkplugin.swiftmodule/Project/x86_64.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Modules/lblelinkplugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Modules/lblelinkplugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Modules/lblelinkplugin.swiftmodule/x86_64.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Modules/lblelinkplugin.swiftmodule/x86_64.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Debug-iphonesimulator/lblelinkplugin/lblelinkplugin.framework/lblelinkplugin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/Runner.build/Release-iphoneos/Runner.build/dgph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon20x20@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon20x20~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon29x29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon29x29@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon29x29~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon40x40@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon40x40~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon76x76@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon76x76~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/AppIcon83.5x83.5@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Base.lproj/Main.storyboardc/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/icudtl.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/libswiftCore.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/libswiftCoreFoundation.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/libswiftCoreGraphics.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/libswiftDarwin.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/libswiftDispatch.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/libswiftFoundation.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/Frameworks/libswiftObjectiveC.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphoneos/Runner.app/embedded.mobileprovision" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon20x20@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon20x20~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon29x29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon29x29@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon29x29~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon40x40@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon40x40~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon76x76@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon76x76~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/AppIcon83.5x83.5@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Assets.car" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/isolate_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/vm_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/Flutter.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/Flutter.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/Flutter.framework/icudtl.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/lblelinkplugin.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/lblelinkplugin.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/lblelinkplugin.framework/lblelinkplugin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/libswiftCore.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/libswiftCoreFoundation.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/libswiftCoreGraphics.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/libswiftDarwin.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/libswiftDispatch.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/libswiftFoundation.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Frameworks/libswiftObjectiveC.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/PkgInfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/ios/pod_inputs.fingerprint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/last_build_run.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/build/snapshot_blob.bin.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Pods/Manifest.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/GeneratedPluginRegistrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/GeneratedPluginRegistrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/GeneratedPluginRegistrant.m" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/GeneratedPluginRegistrant.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/LMLBEventChannelSupport.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/LMLBEventChannelSupport.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/LMLBSDKManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/LMLBSDKManager.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftLblelinkpluginPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftLblelinkpluginPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/lblelinkplugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lblelinkplugin.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,76 +280,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_R" />
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/lblelinkplugin.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/flutter/packages/flutter/lib/cupertino.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#1661#0" expanded="true" />
-                <element signature="e#380#421#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/flutter/bin/cache/pkg/sky_engine/lib/async/stream.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="442" column="39" selection-start-line="442" selection-start-column="39" selection-end-line="442" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Documents/flutter/packages/flutter/lib/src/services/platform_channel.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40">
-              <caret line="499" column="18" selection-start-line="499" selection-start-column="18" selection-end-line="499" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/example/lib/main.dart" />
-        <option value="$PROJECT_DIR$/lib/lblelinkplugin.dart" />
-      </list>
-    </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -94,48 +289,6 @@
         <option value="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-45" />
-    <option name="y" value="23" />
-    <option name="width" value="1147" />
-    <option name="height" value="707" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="lblelink_plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lblelink_plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lblelink_plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lblelink_plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lblelink_plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lblelink_plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lblelink_plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lblelink_plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -175,106 +328,19 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-45" y="23" width="1147" height="707" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.32941177" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Captures" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="Dart Analysis" weight="0.32890856" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info active="true" anchor="bottom" id="Run" visible="true" weight="0.16037735" />
-      <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32890856" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Flutter Inspector" />
-      <window_info anchor="right" id="Flutter Outline" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Flutter Performance" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Structure" order="0" side_tool="true" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Resources Explorer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.32988802" />
-      <window_info id="Captures" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32890856" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.27728614" />
-      <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32890856" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Flutter Inspector" order="2" />
-      <window_info anchor="right" id="Flutter Outline" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Flutter Performance" order="5" />
-    </layout-to-restore>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/flutter/packages/flutter/lib/cupertino.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#1661#0" expanded="true" />
-            <element signature="e#380#421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/flutter/packages/flutter/lib/src/services/platform_channel.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
-          <caret line="499" column="18" selection-start-line="499" selection-start-column="18" selection-end-line="499" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/flutter/bin/cache/pkg/sky_engine/lib/async/stream.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="442" column="39" selection-start-line="442" selection-start-column="39" selection-end-line="442" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/lblelinkplugin.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="补传文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="补传文件" />
   </component>
 </project>

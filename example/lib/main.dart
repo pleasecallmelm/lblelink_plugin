@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -55,7 +57,10 @@ class _MyAppState extends State<MyApp> {
             Column(
               children: <Widget>[
                 FlatButton(onPressed: (){
+                  if(Platform.isIOS)
                   Lblelinkplugin.initLBSdk("14342", "c67255e53e3feee87673bc67f6895360");
+                  else
+                    Lblelinkplugin.initLBSdk("14345", "596d9df457fb194f6944c9bc51e8343d");
                 }, child: Text("初始化")),
                 FlatButton(onPressed: (){
                   Lblelinkplugin.getServicesList((data){
@@ -73,7 +78,10 @@ class _MyAppState extends State<MyApp> {
                 }, child: Text("连接设备")),
                 FlatButton(onPressed: (){
                   Lblelinkplugin.play('http://pullhls80d25490.live.126.net/live/7d9cc146131245ddbf2126d56c699191/playlist.m3u8');
-                }, child: Text("开始投屏"))
+                }, child: Text("开始投屏")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.disConnect();
+                }, child: Text("结束投屏"))
               ],
             ),
            Container(
