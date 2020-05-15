@@ -1,0 +1,6 @@
+module lblelinkplugin {
+  umbrella header "lblelinkplugin-umbrella.h"
+
+  export *
+  module * { export * }
+}

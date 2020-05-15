@@ -1,0 +1,1047 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 94078A06C17E946ADC1F2C06726219E5 /* Build configuration list for PBXAggregateTarget "Flutter" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = Flutter;
+		};
+		A85A6E1CC954096AA3155D2A04DA605B /* LBLelinkKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 76501F9C8EB68BEED817182BCF4DE79A /* Build configuration list for PBXAggregateTarget "LBLelinkKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = LBLelinkKit;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		169D94A15F248B69F7432C177744F3C0 /* LblelinkpluginPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E05A806BA1F57AD3BB62EC073A6917 /* LblelinkpluginPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		16FE262B4EB0FC52D75C2AEE31344AF9 /* lblelinkplugin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B4CF25A1E7EA619741E8D0268917C8 /* lblelinkplugin-dummy.m */; };
+		2450A4363F17E64FFDFA5E07DA772BCD /* Pods-Runner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED0233A265F3C1E59A644AD61EE6D64 /* Pods-Runner-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6CF7D53CE5D76A495431B28B4426C473 /* LMLBEventChannelSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CB01CC63F63C28C75FFFD9702AE17F /* LMLBEventChannelSupport.swift */; };
+		84C965AA19BFBD569AECF3702F3A37BD /* LblelinkpluginPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E689E0389DF206D09BCFBBDE48D832 /* LblelinkpluginPlugin.m */; };
+		9B5A917DFDB70B4B90B3316F3510628A /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA536E66665E697895E33CFF58C85B9B /* Pods-Runner-dummy.m */; };
+		9C30A002CA06AD2E6DE5E44AFEE64DCE /* SwiftLblelinkpluginPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077D17502EED9DDDDACDF7DE9BA6E85C /* SwiftLblelinkpluginPlugin.swift */; };
+		B411F8EE20ED94BD7A1CA343CED3FF9E /* LMLBSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F098FC4E633AA7CF6187DF265649EA2 /* LMLBSDKManager.swift */; };
+		CBFAFE34D9DF761CC0D88AACB08E1760 /* lblelinkplugin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5850DCB7942453962AF368321773563 /* lblelinkplugin-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE8CF10C835A0B8CEAB0AC18AC02D53E /* LBPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F652AA66D7AFBD0737246B3CB08767 /* LBPlayerManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C4AEBB7BB17D663E2A0BEE7711B7275 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A85A6E1CC954096AA3155D2A04DA605B;
+			remoteInfo = LBLelinkKit;
+		};
+		2309DE9D957E0BE6B145E950D0684769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB58D30935A1E832AF1E1654A1FE3435;
+			remoteInfo = lblelinkplugin;
+		};
+		37771C771DD280B1061ADB6B3AE48FCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A85A6E1CC954096AA3155D2A04DA605B;
+			remoteInfo = LBLelinkKit;
+		};
+		6A8363B2655777A8060B20710AE79BBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+		A2E906DE0EFF82B3A8ADEF38178ABFCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02F652AA66D7AFBD0737246B3CB08767 /* LBPlayerManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LBPlayerManager.swift; path = ../../../../../../../ios/Classes/LBPlayerManager.swift; sourceTree = "<group>"; };
+		077D17502EED9DDDDACDF7DE9BA6E85C /* SwiftLblelinkpluginPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLblelinkpluginPlugin.swift; path = ../../../../../../../ios/Classes/SwiftLblelinkpluginPlugin.swift; sourceTree = "<group>"; };
+		1F098FC4E633AA7CF6187DF265649EA2 /* LMLBSDKManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LMLBSDKManager.swift; path = ../../../../../../../ios/Classes/LMLBSDKManager.swift; sourceTree = "<group>"; };
+		2C4E0699E1F7845F0F185B417779F2A6 /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flutter.framework; sourceTree = "<group>"; };
+		36B4CF25A1E7EA619741E8D0268917C8 /* lblelinkplugin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lblelinkplugin-dummy.m"; sourceTree = "<group>"; };
+		4596051F0BA9A0CE842F07E2BE548D2F /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		4AFCC462B4759C77A0144BAA8081F5C6 /* LBLelinkKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBLelinkKit.release.xcconfig; sourceTree = "<group>"; };
+		5795D3B757ABD7B0E411FBC5C2ED37A0 /* LBLelinkKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBLelinkKit.debug.xcconfig; sourceTree = "<group>"; };
+		5ED0233A265F3C1E59A644AD61EE6D64 /* Pods-Runner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Runner-umbrella.h"; sourceTree = "<group>"; };
+		669E8F25E1897672BDB80B7EB784DA24 /* libPods-Runner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Runner.a"; path = "libPods-Runner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E05A806BA1F57AD3BB62EC073A6917 /* LblelinkpluginPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LblelinkpluginPlugin.h; path = ../../../../../../../ios/Classes/LblelinkpluginPlugin.h; sourceTree = "<group>"; };
+		7EB8235CE84C4E9A26D53E5491EC9276 /* lblelinkplugin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = lblelinkplugin.podspec; path = ../../../../../../ios/lblelinkplugin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		80CE706E763EC55F9A4276A6976E196B /* lblelinkplugin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lblelinkplugin-prefix.pch"; sourceTree = "<group>"; };
+		87E689E0389DF206D09BCFBBDE48D832 /* LblelinkpluginPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LblelinkpluginPlugin.m; path = ../../../../../../../ios/Classes/LblelinkpluginPlugin.m; sourceTree = "<group>"; };
+		8F3B9B876CE2F9BFC4E2B95B9840579D /* Pods-Runner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-acknowledgements.plist"; sourceTree = "<group>"; };
+		9A1FC91C9D1D54BA016796A0A174DA7C /* lblelinkplugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = lblelinkplugin.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5850DCB7942453962AF368321773563 /* lblelinkplugin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lblelinkplugin-umbrella.h"; sourceTree = "<group>"; };
+		AECD568A05E8A3FCE922EFEF1B1D9BEC /* lblelinkplugin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = lblelinkplugin.modulemap; sourceTree = "<group>"; };
+		B2F2A6AABB9C16819C87D99BD84AE9FB /* Flutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.release.xcconfig; sourceTree = "<group>"; };
+		C2AC0E927A1530C5CF279A6ED7D7FF1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../../../../../../LICENSE; sourceTree = "<group>"; };
+		C51013CABA624DC909EB08C2172EC250 /* Pods-Runner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCBE4E044D85A9409C6F5BCBDE998A98 /* Pods-Runner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Runner-frameworks.sh"; sourceTree = "<group>"; };
+		CDC570B6D1D0849EFBC4FFFFC5C01211 /* Pods-Runner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Runner.modulemap"; sourceTree = "<group>"; };
+		D1C3E0BD6D97FB362991F359ED3D4E30 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		D1D4AD38543F06DA849890D7B22D8FDB /* lblelinkplugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = lblelinkplugin.release.xcconfig; sourceTree = "<group>"; };
+		D6CB01CC63F63C28C75FFFD9702AE17F /* LMLBEventChannelSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LMLBEventChannelSupport.swift; path = ../../../../../../../ios/Classes/LMLBEventChannelSupport.swift; sourceTree = "<group>"; };
+		DA04431E95C518AAF6BC8E69E8B02B10 /* Flutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.debug.xcconfig; sourceTree = "<group>"; };
+		DDA718BD7A6C6232E9BAADBFE210A64A /* liblblelinkplugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = liblblelinkplugin.a; path = liblblelinkplugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA536E66665E697895E33CFF58C85B9B /* Pods-Runner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runner-dummy.m"; sourceTree = "<group>"; };
+		EE824F09397CCDB4B05A501BD109204F /* LBLelinkKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LBLelinkKit.framework; sourceTree = "<group>"; };
+		EEEDA154FBDB19F9F13FB6EBD6FB11BF /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		EF7C14FC74579CC80498D5229AA78F08 /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB8198E1A2736E87E5E3554CCD35C8D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE71929065601F5DB54987D468CD8B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0416B0E4C07AFF28765310AAA41DA4F0 /* LBLelinkKit */ = {
+			isa = PBXGroup;
+			children = (
+				ED5C5BEB83AC3B5243D97F4BD3D466DF /* Frameworks */,
+				5543F06EDC7F42B9E38E8599E4801128 /* Support Files */,
+			);
+			name = LBLelinkKit;
+			path = LBLelinkKit;
+			sourceTree = "<group>";
+		};
+		0995AA93937352BD1E5E04E1E0144180 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				75E05A806BA1F57AD3BB62EC073A6917 /* LblelinkpluginPlugin.h */,
+				87E689E0389DF206D09BCFBBDE48D832 /* LblelinkpluginPlugin.m */,
+				02F652AA66D7AFBD0737246B3CB08767 /* LBPlayerManager.swift */,
+				D6CB01CC63F63C28C75FFFD9702AE17F /* LMLBEventChannelSupport.swift */,
+				1F098FC4E633AA7CF6187DF265649EA2 /* LMLBSDKManager.swift */,
+				077D17502EED9DDDDACDF7DE9BA6E85C /* SwiftLblelinkpluginPlugin.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		09FC430A4938279FFD703693BE9487BC /* lblelinkplugin */ = {
+			isa = PBXGroup;
+			children = (
+				50B6A56073EF0AF243E5094F81232E8D /* ios */,
+			);
+			name = lblelinkplugin;
+			path = lblelinkplugin;
+			sourceTree = "<group>";
+		};
+		0B8013102AC368BE17DC39C4C13E2777 /* lblelinkplugin */ = {
+			isa = PBXGroup;
+			children = (
+				67736FA9B6B66B03663368B644A86212 /* .. */,
+				3F1B8DAF3F7AF7F6F62632E82C69C823 /* Pod */,
+				CF67F22FF081EE67EAEA2AD1E033AD46 /* Support Files */,
+			);
+			name = lblelinkplugin;
+			path = ../.symlinks/plugins/lblelinkplugin/ios;
+			sourceTree = "<group>";
+		};
+		209FE70B6BF0AF47A0D3AF86E4CEEA28 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				09FC430A4938279FFD703693BE9487BC /* lblelinkplugin */,
+			);
+			name = plugins;
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		3F1B8DAF3F7AF7F6F62632E82C69C823 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7EB8235CE84C4E9A26D53E5491EC9276 /* lblelinkplugin.podspec */,
+				C2AC0E927A1530C5CF279A6ED7D7FF1C /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		50B6A56073EF0AF243E5094F81232E8D /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				0995AA93937352BD1E5E04E1E0144180 /* Classes */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		5543F06EDC7F42B9E38E8599E4801128 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5795D3B757ABD7B0E411FBC5C2ED37A0 /* LBLelinkKit.debug.xcconfig */,
+				4AFCC462B4759C77A0144BAA8081F5C6 /* LBLelinkKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LBLelinkKit";
+			sourceTree = "<group>";
+		};
+		584A12B338B2ED8B1DD8ECB9842FC279 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C4E0699E1F7845F0F185B417779F2A6 /* Flutter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59FB827E93103DEDFC300FCD0233B7C7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EF7C14FC74579CC80498D5229AA78F08 /* Flutter.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		67736FA9B6B66B03663368B644A86212 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				C5CC374E2117AFD3BC463DF07C200B32 /* .. */,
+			);
+			name = ..;
+			path = ../../../../../../ios;
+			sourceTree = "<group>";
+		};
+		6F1EA2BDA26C91218A96C6B148A99762 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDA718BD7A6C6232E9BAADBFE210A64A /* liblblelinkplugin.a */,
+				669E8F25E1897672BDB80B7EB784DA24 /* libPods-Runner.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C35E8E55BE7EA49540C8D07C9C1B024 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4CADE6CD6929FB1D05DE1A47B6E116B /* Pods-Runner */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		81AD9C5A07CC2C64332A5D16D10A093D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0416B0E4C07AFF28765310AAA41DA4F0 /* LBLelinkKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89C54F440109B696FBB334F60143F219 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				584A12B338B2ED8B1DD8ECB9842FC279 /* Frameworks */,
+				59FB827E93103DEDFC300FCD0233B7C7 /* Pod */,
+				9FB616D599146755027C57ADC21A515E /* Support Files */,
+			);
+			name = Flutter;
+			path = ../Flutter;
+			sourceTree = "<group>";
+		};
+		9E96D3847F05A7826B9E38D1635721B7 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				C27434360B0C30067EEEA62E9B8ABCF6 /* ios */,
+			);
+			name = example;
+			path = example;
+			sourceTree = "<group>";
+		};
+		9FB616D599146755027C57ADC21A515E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA04431E95C518AAF6BC8E69E8B02B10 /* Flutter.debug.xcconfig */,
+				B2F2A6AABB9C16819C87D99BD84AE9FB /* Flutter.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Pods/Target Support Files/Flutter";
+			sourceTree = "<group>";
+		};
+		A1DB87A4305F3632F0715A54E8B02452 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89C54F440109B696FBB334F60143F219 /* Flutter */,
+				0B8013102AC368BE17DC39C4C13E2777 /* lblelinkplugin */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C27434360B0C30067EEEA62E9B8ABCF6 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				F159999AA6D6B711B17F82B807EFB9A1 /* .symlinks */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		C5CC374E2117AFD3BC463DF07C200B32 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				9E96D3847F05A7826B9E38D1635721B7 /* example */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A1DB87A4305F3632F0715A54E8B02452 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				81AD9C5A07CC2C64332A5D16D10A093D /* Pods */,
+				6F1EA2BDA26C91218A96C6B148A99762 /* Products */,
+				7C35E8E55BE7EA49540C8D07C9C1B024 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF67F22FF081EE67EAEA2AD1E033AD46 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AECD568A05E8A3FCE922EFEF1B1D9BEC /* lblelinkplugin.modulemap */,
+				36B4CF25A1E7EA619741E8D0268917C8 /* lblelinkplugin-dummy.m */,
+				80CE706E763EC55F9A4276A6976E196B /* lblelinkplugin-prefix.pch */,
+				A5850DCB7942453962AF368321773563 /* lblelinkplugin-umbrella.h */,
+				9A1FC91C9D1D54BA016796A0A174DA7C /* lblelinkplugin.debug.xcconfig */,
+				D1D4AD38543F06DA849890D7B22D8FDB /* lblelinkplugin.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../Pods/Target Support Files/lblelinkplugin";
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED5C5BEB83AC3B5243D97F4BD3D466DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE824F09397CCDB4B05A501BD109204F /* LBLelinkKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F159999AA6D6B711B17F82B807EFB9A1 /* .symlinks */ = {
+			isa = PBXGroup;
+			children = (
+				209FE70B6BF0AF47A0D3AF86E4CEEA28 /* plugins */,
+			);
+			name = .symlinks;
+			path = .symlinks;
+			sourceTree = "<group>";
+		};
+		F4CADE6CD6929FB1D05DE1A47B6E116B /* Pods-Runner */ = {
+			isa = PBXGroup;
+			children = (
+				CDC570B6D1D0849EFBC4FFFFC5C01211 /* Pods-Runner.modulemap */,
+				C51013CABA624DC909EB08C2172EC250 /* Pods-Runner-acknowledgements.markdown */,
+				8F3B9B876CE2F9BFC4E2B95B9840579D /* Pods-Runner-acknowledgements.plist */,
+				EA536E66665E697895E33CFF58C85B9B /* Pods-Runner-dummy.m */,
+				CCBE4E044D85A9409C6F5BCBDE998A98 /* Pods-Runner-frameworks.sh */,
+				5ED0233A265F3C1E59A644AD61EE6D64 /* Pods-Runner-umbrella.h */,
+				EEEDA154FBDB19F9F13FB6EBD6FB11BF /* Pods-Runner.debug.xcconfig */,
+				D1C3E0BD6D97FB362991F359ED3D4E30 /* Pods-Runner.profile.xcconfig */,
+				4596051F0BA9A0CE842F07E2BE548D2F /* Pods-Runner.release.xcconfig */,
+			);
+			name = "Pods-Runner";
+			path = "Target Support Files/Pods-Runner";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B39FEA576EFB2EA5C78E156A5ABDEF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2450A4363F17E64FFDFA5E07DA772BCD /* Pods-Runner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E3238A19A7F850B806B8DBDC61314A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFAFE34D9DF761CC0D88AACB08E1760 /* lblelinkplugin-umbrella.h in Headers */,
+				169D94A15F248B69F7432C177744F3C0 /* LblelinkpluginPlugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8B74B458B450D74B75744B87BD747314 /* Pods-Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86CB86D5A09F4883C1A20CCFC79F5DD /* Build configuration list for PBXNativeTarget "Pods-Runner" */;
+			buildPhases = (
+				2B39FEA576EFB2EA5C78E156A5ABDEF5 /* Headers */,
+				92FC1731EC1A42D4F3060E9C118BCC37 /* Sources */,
+				CE71929065601F5DB54987D468CD8B49 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60EBE86DAF06BDC4DD4D78AE7F8325F1 /* PBXTargetDependency */,
+				52BAE1445AFF7CF66D4ACFBD05FF7F75 /* PBXTargetDependency */,
+				85B5C96F62D4006D605103151543938C /* PBXTargetDependency */,
+			);
+			name = "Pods-Runner";
+			productName = "Pods-Runner";
+			productReference = 669E8F25E1897672BDB80B7EB784DA24 /* libPods-Runner.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EB58D30935A1E832AF1E1654A1FE3435 /* lblelinkplugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8F57134C10FEB134F8B861C417BB4A2 /* Build configuration list for PBXNativeTarget "lblelinkplugin" */;
+			buildPhases = (
+				B4E3238A19A7F850B806B8DBDC61314A /* Headers */,
+				8243070DFD4C00678E56497F5D1E2847 /* Sources */,
+				AB8198E1A2736E87E5E3554CCD35C8D7 /* Frameworks */,
+				2ECFB1394E36C470B322088B03CD0773 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CC9D834EFD6630B83CEDB89574FFFD2 /* PBXTargetDependency */,
+				0861BAA8D46D791F903F64A5C0CE31F0 /* PBXTargetDependency */,
+			);
+			name = lblelinkplugin;
+			productName = lblelinkplugin;
+			productReference = DDA718BD7A6C6232E9BAADBFE210A64A /* liblblelinkplugin.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6F1EA2BDA26C91218A96C6B148A99762 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */,
+				A85A6E1CC954096AA3155D2A04DA605B /* LBLelinkKit */,
+				EB58D30935A1E832AF1E1654A1FE3435 /* lblelinkplugin */,
+				8B74B458B450D74B75744B87BD747314 /* Pods-Runner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2ECFB1394E36C470B322088B03CD0773 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/lblelinkplugin/lblelinkplugin.modulemap",
+				"${PODS_ROOT}/Headers/Public/lblelinkplugin/lblelinkplugin-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/lblelinkplugin-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/lblelinkplugin/lblelinkplugin.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/lblelinkplugin/lblelinkplugin-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8243070DFD4C00678E56497F5D1E2847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FE262B4EB0FC52D75C2AEE31344AF9 /* lblelinkplugin-dummy.m in Sources */,
+				84C965AA19BFBD569AECF3702F3A37BD /* LblelinkpluginPlugin.m in Sources */,
+				CE8CF10C835A0B8CEAB0AC18AC02D53E /* LBPlayerManager.swift in Sources */,
+				6CF7D53CE5D76A495431B28B4426C473 /* LMLBEventChannelSupport.swift in Sources */,
+				B411F8EE20ED94BD7A1CA343CED3FF9E /* LMLBSDKManager.swift in Sources */,
+				9C30A002CA06AD2E6DE5E44AFEE64DCE /* SwiftLblelinkpluginPlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FC1731EC1A42D4F3060E9C118BCC37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B5A917DFDB70B4B90B3316F3510628A /* Pods-Runner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0861BAA8D46D791F903F64A5C0CE31F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LBLelinkKit;
+			target = A85A6E1CC954096AA3155D2A04DA605B /* LBLelinkKit */;
+			targetProxy = 37771C771DD280B1061ADB6B3AE48FCD /* PBXContainerItemProxy */;
+		};
+		52BAE1445AFF7CF66D4ACFBD05FF7F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LBLelinkKit;
+			target = A85A6E1CC954096AA3155D2A04DA605B /* LBLelinkKit */;
+			targetProxy = 1C4AEBB7BB17D663E2A0BEE7711B7275 /* PBXContainerItemProxy */;
+		};
+		60EBE86DAF06BDC4DD4D78AE7F8325F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = 6A8363B2655777A8060B20710AE79BBF /* PBXContainerItemProxy */;
+		};
+		6CC9D834EFD6630B83CEDB89574FFFD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = A2E906DE0EFF82B3A8ADEF38178ABFCE /* PBXContainerItemProxy */;
+		};
+		85B5C96F62D4006D605103151543938C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = lblelinkplugin;
+			target = EB58D30935A1E832AF1E1654A1FE3435 /* lblelinkplugin */;
+			targetProxy = 2309DE9D957E0BE6B145E950D0684769 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		352472D9C0BF916CA06CD66D7F3465A1 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F2A6AABB9C16819C87D99BD84AE9FB /* Flutter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		456FC3B9C6FEF2D6D111975408361719 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AFCC462B4759C77A0144BAA8081F5C6 /* LBLelinkKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6D0CBE85D94D4C9883173EFDED435469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A1FC91C9D1D54BA016796A0A174DA7C /* lblelinkplugin.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/lblelinkplugin/lblelinkplugin-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/lblelinkplugin/lblelinkplugin.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = lblelinkplugin;
+				PRODUCT_NAME = lblelinkplugin;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DB88287FBF0DDC642169D4FE56485F2 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_PROFILE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Profile;
+		};
+		73E62F6A3EEDAC14E678FC4B5568E940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1D4AD38543F06DA849890D7B22D8FDB /* lblelinkplugin.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/lblelinkplugin/lblelinkplugin-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/lblelinkplugin/lblelinkplugin.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = lblelinkplugin;
+				PRODUCT_NAME = lblelinkplugin;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9386F67A418616514511978C92B8CECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4596051F0BA9A0CE842F07E2BE548D2F /* Pods-Runner.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ECFB18C2EF084301227BB4DF054A790 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C3E0BD6D97FB362991F359ED3D4E30 /* Pods-Runner.profile.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		A61138F34FDEA196B7E17C45338192EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F2A6AABB9C16819C87D99BD84AE9FB /* Flutter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDF1A959F421E394CDE1732FF42A2221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEDA154FBDB19F9F13FB6EBD6FB11BF /* Pods-Runner.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Runner/Pods-Runner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D865F451DBED2657D8C1644047E1D987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA04431E95C518AAF6BC8E69E8B02B10 /* Flutter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D90468201DC241F1CBC5F88692065B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AFCC462B4759C77A0144BAA8081F5C6 /* LBLelinkKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4EBEC2E3E8B0C7E12377F70C4336CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5795D3B757ABD7B0E411FBC5C2ED37A0 /* LBLelinkKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F64CCF262EF9197CBC0DF276D5C153A0 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1D4AD38543F06DA849890D7B22D8FDB /* lblelinkplugin.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/lblelinkplugin/lblelinkplugin-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/lblelinkplugin/lblelinkplugin.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = lblelinkplugin;
+				PRODUCT_NAME = lblelinkplugin;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				6DB88287FBF0DDC642169D4FE56485F2 /* Profile */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76501F9C8EB68BEED817182BCF4DE79A /* Build configuration list for PBXAggregateTarget "LBLelinkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4EBEC2E3E8B0C7E12377F70C4336CE7 /* Debug */,
+				456FC3B9C6FEF2D6D111975408361719 /* Profile */,
+				D90468201DC241F1CBC5F88692065B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94078A06C17E946ADC1F2C06726219E5 /* Build configuration list for PBXAggregateTarget "Flutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D865F451DBED2657D8C1644047E1D987 /* Debug */,
+				352472D9C0BF916CA06CD66D7F3465A1 /* Profile */,
+				A61138F34FDEA196B7E17C45338192EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F86CB86D5A09F4883C1A20CCFC79F5DD /* Build configuration list for PBXNativeTarget "Pods-Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF1A959F421E394CDE1732FF42A2221 /* Debug */,
+				9ECFB18C2EF084301227BB4DF054A790 /* Profile */,
+				9386F67A418616514511978C92B8CECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8F57134C10FEB134F8B861C417BB4A2 /* Build configuration list for PBXNativeTarget "lblelinkplugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0CBE85D94D4C9883173EFDED435469 /* Debug */,
+				F64CCF262EF9197CBC0DF276D5C153A0 /* Profile */,
+				73E62F6A3EEDAC14E678FC4B5568E940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
