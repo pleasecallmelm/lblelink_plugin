@@ -69,7 +69,7 @@ class _MyAppState extends State<MyApp> {
                   });
                 }, child: Text("搜索设备")),
                 FlatButton(onPressed: (){
-                  Lblelinkplugin.connectToService();
+                  Lblelinkplugin.connectToService("123");
                 }, child: Text("连接设备")),
                 FlatButton(onPressed: (){
                   Lblelinkplugin.play('http://pullhls80d25490.live.126.net/live/7d9cc146131245ddbf2126d56c699191/playlist.m3u8');
