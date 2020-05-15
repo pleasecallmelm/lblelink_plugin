@@ -5,10 +5,9 @@
       <change beforePath="$PROJECT_DIR$/example/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcuserdata/yunxiwangluo.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcuserdata/yunxiwangluo.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcuserdata/yunxiwangluo.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcuserdata/yunxiwangluo.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/LBPlayerManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/LBPlayerManager.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/LMLBEventChannelSupport.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/LMLBEventChannelSupport.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/LMLBSDKManager.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/LMLBSDKManager.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftLblelinkpluginPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftLblelinkpluginPlugin.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/lblelinkplugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lblelinkplugin.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/lblelinkplugin.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="281">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -66,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+            <state relative-caret-position="686">
+              <caret line="62" selection-start-line="62" selection-end-line="63" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -96,8 +95,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-45" />
-    <option name="y" value="23" />
+    <option name="x" value="125" />
+    <option name="y" value="27" />
     <option name="width" value="1147" />
     <option name="height" value="707" />
   </component>
@@ -176,10 +175,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-45" y="23" width="1147" height="707" extended-state="0" />
+    <frame x="125" y="27" width="1147" height="707" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" visible="true" weight="0.32941177" />
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32941177" />
       <window_info id="Structure" side_tool="true" />
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -190,7 +189,7 @@
       <window_info anchor="bottom" id="Dart Analysis" weight="0.32890856" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="TODO" />
-      <window_info active="true" anchor="bottom" id="Run" visible="true" weight="0.16037735" />
+      <window_info anchor="bottom" id="Run" weight="0.3144654" />
       <window_info anchor="bottom" id="Debug" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -209,10 +208,10 @@
       <window_info id="Designer" order="3" />
       <window_info id="Resources Explorer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.32988802" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.32941177" />
       <window_info id="Captures" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32890856" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.27728614" />
+      <window_info anchor="bottom" id="Run" order="1" visible="true" weight="0.3144654" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
@@ -258,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        <state relative-caret-position="686">
+          <caret line="62" selection-start-line="62" selection-end-line="63" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -268,8 +267,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/lblelinkplugin.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="281">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

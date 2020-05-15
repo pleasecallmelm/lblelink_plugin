@@ -111,7 +111,7 @@ extension LMLBSDKManager: LBLelinkBrowserDelegate{
         
         print("搜索设备发生错误：\(String(describing: error))")
         
-        
+        LMLBEventChannelSupport.sharedInstance.sendErrorToFlutter(error: error);
     }
     
     //设备列表发生变化回调
@@ -132,39 +132,29 @@ extension LMLBSDKManager: LBLelinkConnectionDelegate{
    func lelinkConnection(_ connection: LBLelinkConnection, didConnectTo service: LBLelinkService) {
        
        print("连接成功");
+    LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .connect, des: "连接\(service.lelinkServiceName)成功")
     
    }
 
     //连接断开
     func lelinkConnection(_ connection: LBLelinkConnection, disConnectTo service: LBLelinkService) {
-        
         print("连接断开");
+        
+         LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .disConnect, des: "与\(service.lelinkServiceName)断开连接")
+        
     }
     
     //连接出错
     func lelinkConnection(_ connection: LBLelinkConnection, onError error: Error) {
         
         print("连接出错");
+        LMLBEventChannelSupport.sharedInstance.sendErrorToFlutter(error: error)
     }
     
     //收到互动广告
     func lelinkConnection(_ connection: LBLelinkConnection, didReceive adInfo: LBADInfo) {
         
+        //暂不处理
     }
     
 }
-
-
-//extension LMLBSDKManager: LBLelinkPlayerDelegate{
-//    
-//    //播放状态回调
-//    func lelinkPlayer(_ player: LBLelinkPlayer!, playStatus: LBLelinkPlayStatus) {
-//        
-//    }
-//    
-//    //播放错误回调
-//    func lelinkPlayer(_ player: LBLelinkPlayer!, onError error: Error!) {
-//        
-//    }
-//    
-//}

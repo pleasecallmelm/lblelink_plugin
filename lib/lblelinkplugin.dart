@@ -1,9 +1,7 @@
 import 'dart:async';
-import 'dart:html';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-
 
 class Lblelinkplugin {
   static const MethodChannel _channel = const MethodChannel('lblelinkplugin');
@@ -13,34 +11,31 @@ class Lblelinkplugin {
   //设备列表回调
   static ValueChanged<List<String>> _serviecListener;
 
-
   //eventChannel监听分发中心
-  static eventChannelDistribution(){
-
+  static eventChannelDistribution() {
     _eventChannel.receiveBroadcastStream().listen((data) {
       int type = data["type"];
 
-      switch (type){
+      switch (type) {
         case -1:
-          
+
+          break;
+        case 0:
           break;
         default:
           break;
       }
     });
-
   }
-
 
   //初始化sdk
   //返回值：初始化成功与否
-  static Future<bool> initLBSdk(String appid, String secretKey) async{
+  static Future<bool> initLBSdk(String appid, String secretKey) async {
     await _channel
         .invokeMethod("initLBSdk", {"appid": appid, "secretKey": secretKey});
 
     //初始化的时候注册eventChannel回调
     eventChannelDistribution();
-
   }
 
   //获取设备列表
@@ -64,12 +59,7 @@ class Lblelinkplugin {
 
   //连接设备(参数未定)
   static connectToService(String tvUID) {
-    _channel.invokeMethod("connectToService",{"tvUID":tvUID});
-    //连接设备的回调
-    _eventChannel.receiveBroadcastStream().listen((data) {
-
-
-    });
+    _channel.invokeMethod("connectToService", {"tvUID": tvUID});
   }
 
   //断开连接

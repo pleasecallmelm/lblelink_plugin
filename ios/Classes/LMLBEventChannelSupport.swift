@@ -68,6 +68,26 @@ class LMLBEventChannelSupport: NSObject,FlutterPlugin, FlutterStreamHandler{
         }
     }
     
+    //发送错误给flutter
+    func sendErrorToFlutter(error: Error) {
+    
+        if let sink = self.eventSink{
+        
+            sink(self.createResult(type: .error, data: "String(describing: error)"))
+    
+        }
+        
+    }
+    
+    //一般输出（例如连接成功等）
+    func sendCommonDesToFlutter(type: ResultType,des: String){
+        if let sink = self.eventSink{
+            
+            sink(self.createResult(type: type, data: des))
+        
+        }
+    }
+    
     
     func createResult(type:ResultType,data:Any)->Dictionary<String, Any>{
         

@@ -76,6 +76,33 @@ extension LBPlayerManager: LBLelinkPlayerDelegate{
          LBLelinkPlayStatusError,         // 播放错误
          */
         
+        switch playStatus {
+        case .loading:
+            LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .load, des: "视频正在加载...")
+            break
+        case .playing:
+        LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .start, des: "开始播放")
+        break
+        case .pause:
+        LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .pause, des: "视频暂停")
+        break
+        case .stopped:
+        LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .stop, des: "退出播放")
+        break
+        case .commpleted:
+        LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .complete, des: "播放完成")
+        break
+        case .error:
+        LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .error, des: "播放出错")
+        break
+        default:
+            break
+        }
+        
+        
+        
+        
+        
         
         
         
@@ -84,7 +111,7 @@ extension LBPlayerManager: LBLelinkPlayerDelegate{
     //播放错误回调
     func lelinkPlayer(_ player: LBLelinkPlayer!, onError error: Error!) {
         
-        
+        LMLBEventChannelSupport.sharedInstance.sendErrorToFlutter(error: error)
         
     }
     
