@@ -14,10 +14,10 @@ class LMLBSDKManager: NSObject {
     //设备搜索类
     
     //初始化乐播sdk
-    func initLBSDK(appid: String,secretKey: String){
+    func initLBSDK(appid: String,secretKey: String,result: @escaping FlutterResult){
         
         #if DEBUG
-            LBLelinkKit.enableLog(true);
+       //     LBLelinkKit.enableLog(true);
         #else
         
         #endif
@@ -29,10 +29,11 @@ class LMLBSDKManager: NSObject {
         }else{
             print("sdk初始化失败")
         }
+        //初始化结果回调给flutter
+        result(authResult)
         
+        //注册成为互动广告的监听者
         LBLelinkKit.registerAsInteractiveAdObserver()
-        
-        self.beginSearchEquipment()
         
     }
     
@@ -42,8 +43,6 @@ class LMLBSDKManager: NSObject {
         //点击搜索设备时上报
         LBLelinkBrowser.reportAPPTVButtonAction()
         
-        //设置设备搜索代理
-        self.linkBrowser.delegate = self;
         //开始搜索设备
         self.linkBrowser.searchForLelinkService()
         
@@ -51,6 +50,9 @@ class LMLBSDKManager: NSObject {
     
     //连接设备
     func linkToService() {
+        
+        
+        
         self.linkConnection.lelinkService = self.services[0]
         self.linkConnection.connect();
         
@@ -61,19 +63,6 @@ class LMLBSDKManager: NSObject {
         self.linkConnection.disConnect();
     }
     
-    
-//    //开始播放
-//    func beginPlay(){
-//
-//        self.player.lelinkConnection = self.linkConnection;
-//
-//        let playItem = LBLelinkPlayerItem()
-//        playItem.mediaType = .videoOnline;
-//        playItem.mediaURLString = ""
-//        playItem.startPosition = 0;
-//        self.player.play(with: playItem)
-//
-//    }
     
     // MARK:--------懒加载--------
     
@@ -90,13 +79,6 @@ class LMLBSDKManager: NSObject {
         a.delegate = self;
         return a
     }()
-    
-//    //播放器
-//    lazy var player: LBLelinkPlayer = {
-//        let a = LBLelinkPlayer()
-//        a!.delegate = self;
-//        return a!
-//    }()
     
     //设备列表
     lazy var services: [LBLelinkService] = {
@@ -122,6 +104,8 @@ extension LMLBSDKManager: LBLelinkBrowserDelegate{
         
         self.services = services;
         
+        LMLBEventChannelSupport.sharedInstance.sendServicesToFlutter(services: services)
+        
     }
     
 }
@@ -132,7 +116,7 @@ extension LMLBSDKManager: LBLelinkConnectionDelegate{
     //连接成功
    func lelinkConnection(_ connection: LBLelinkConnection, didConnectTo service: LBLelinkService) {
        
-    print("连接成功");
+       print("连接成功");
     
    }
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LBLelinkKit
 
 class LMLBEventChannelSupport: NSObject,FlutterPlugin, FlutterStreamHandler{
     
@@ -29,6 +30,23 @@ class LMLBEventChannelSupport: NSObject,FlutterPlugin, FlutterStreamHandler{
     func onCancel(withArguments arguments: Any?) -> FlutterError? {
         
         return nil
+    }
+    
+    //发送设备列表到flutter
+    func sendServicesToFlutter(services: [LBLelinkService]){
+        
+        
+        if let sink = self.eventSink{
+        
+            var a: Array = Array<String>();
+            
+            for item in services {
+                a.append(item.lelinkServiceName);
+                let dict = item.dict()
+                
+            }
+            sink(a);
+        }
     }
     
 

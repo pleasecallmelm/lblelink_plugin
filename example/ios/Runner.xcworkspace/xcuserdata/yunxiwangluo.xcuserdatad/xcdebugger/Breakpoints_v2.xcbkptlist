@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "18EF1540-2263-46A0-A6F3-B85F70EC8433"
+            uuid = "26AD3002-1316-4DEC-A0B7-61C9B601696E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../ios/Classes/LMLBSDKManager.swift"
+            filePath = "../../ios/Classes/LMLBEventChannelSupport.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "lelinkBrowser(_:didFind:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "sendServicesToFlutter(services:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "398D9569-D830-421E-BCAF-0891EE63F1B6"
-            shouldBeEnabled = "Yes"
+            uuid = "DFEF7FDB-DF1F-4901-A9FE-8EE3021F7905"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../ios/Classes/LMLBSDKManager.swift"
+            filePath = "../../ios/Classes/LMLBEventChannelSupport.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "lelinkConnection(_:onError:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "sendServicesToFlutter(services:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
