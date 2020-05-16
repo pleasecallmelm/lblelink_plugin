@@ -38,6 +38,7 @@ class LBPlayerManager: NSObject {
     //退出播放
     func stop(){
         self.player.stop()
+    
     }
     
     //增加音量
@@ -99,19 +100,19 @@ extension LBPlayerManager: LBLelinkPlayerDelegate{
             break
         }
         
-        
-        
-        
-        
-        
-        
-        
     }
     
     //播放错误回调
     func lelinkPlayer(_ player: LBLelinkPlayer!, onError error: Error!) {
         
         LMLBEventChannelSupport.sharedInstance.sendErrorToFlutter(error: error)
+        
+    }
+    
+    //
+    func lelinkPlayer(_ player: LBLelinkPlayer!, progressInfo: LBLelinkProgressInfo!) {
+        
+        print("当前进度:\(progressInfo.currentTime)");
         
     }
     

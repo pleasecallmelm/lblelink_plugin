@@ -55,41 +55,32 @@ class _MyAppState extends State<MyApp> {
           children: <Widget>[
             Column(
               children: <Widget>[
-                FlatButton(
-                    onPressed: () {
-                      if (Platform.isIOS)
-                        Lblelinkplugin.initLBSdk(
-                            "14342", "c67255e53e3feee87673bc67f6895360");
-                      else
-                        Lblelinkplugin.initLBSdk(
-                            "14345", "596d9df457fb194f6944c9bc51e8343d");
-                    },
-                    child: Text("初始化")),
-                FlatButton(
-                    onPressed: () {
-                      Lblelinkplugin.getServicesList((data) {
-                        setState(() {
-                          _serviceNames.addAll(data);
-                        });
-                      });
-                    },
-                    child: Text("搜索设备")),
-                FlatButton(
-                    onPressed: () {
-//                      Lblelinkplugin.connectToService("123");
-                    },
-                    child: Text("连接设备")),
-                FlatButton(
-                    onPressed: () {
-                      Lblelinkplugin.play(
-                          'http://v.mifile.cn/b2c-mimall-media/ed921294fb62caf889d40502f5b38147.mp4');
-                    },
-                    child: Text("开始投屏")),
-                FlatButton(
-                    onPressed: () {
-                      Lblelinkplugin.disConnect();
-                    },
-                    child: Text("结束投屏"))
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.initLBSdk("14342", "c67255e53e3feee87673bc67f6895360");
+                }, child: Text("初始化")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.getServicesList((data){
+                    setState(() {
+                     _serviceNames.addAll(data);
+
+                    });
+                  });
+                }, child: Text("搜索设备")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.connectToService("123");
+                }, child: Text("连接设备")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.play('http://pullhls80d25490.live.126.net/live/7d9cc146131245ddbf2126d56c699191/playlist.m3u8');
+                }, child: Text("开始投屏")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.pause();
+                }, child: Text("暂停")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.resumePlay();
+                }, child: Text("继续")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.stop();
+                }, child: Text("结束"))
               ],
             ),
             Container(
