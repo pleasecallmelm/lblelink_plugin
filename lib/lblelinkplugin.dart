@@ -2,25 +2,40 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
-
+import 'package:lblelinkplugin/tv_list.dart';
 class Lblelinkplugin {
   static const MethodChannel _channel = const MethodChannel('lblelinkplugin');
   static const EventChannel _eventChannel =
       const EventChannel("lblelink_event");
 
   //设备列表回调
-  static ValueChanged<List<String>> _serviecListener;
+  static ValueChanged<List<TvData>> _serviecListener;
+
+  static Function _connectListener;
+  static Function _disConnectListener;
 
   //eventChannel监听分发中心
   static eventChannelDistribution() {
     _eventChannel.receiveBroadcastStream().listen((data) {
+      print(data);
       int type = data["type"];
 
       switch (type) {
         case -1:
-
           break;
         case 0:
+          TvListResult _tvList = TvListResult();
+          _tvList.getResultFromMap(data["data"]);
+          _serviecListener?.call(_tvList.tvList);
+          break;
+        case 1:
+          _connectListener?.call();
+          break;
+        case 3:
+          print("开始了开始了");
+          break;
+        case 4:
+          print("暂停了暂停了");
           break;
         default:
           break;
@@ -40,7 +55,7 @@ class Lblelinkplugin {
 
   //获取设备列表
   //回调：设备数组
-  static getServicesList(ValueChanged<List<String>> serviecListener) {
+  static getServicesList(ValueChanged<List<TvData>> serviecListener) {
     //开始搜索设备
     _channel.invokeMethod("beginSearchEquipment");
 
@@ -58,9 +73,12 @@ class Lblelinkplugin {
   }
 
   //连接设备(参数未定)
-  static connectToService(String tvUID) {
+  static connectToService(String tvUID,{@required Function fConnectListener,@required Function fDisConnectListener}) {
+    _connectListener = fConnectListener;
+    _disConnectListener = fDisConnectListener;
     _channel.invokeMethod("connectToService", {"tvUID": tvUID});
   }
+
 
   //断开连接
   static disConnect() {

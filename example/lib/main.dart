@@ -1,6 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
-
+import 'package:lblelinkplugin/tv_list.dart';
 import 'package:flutter/services.dart';
 import 'package:lblelinkplugin/lblelinkplugin.dart';
 
@@ -14,8 +16,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
 
-  List<String> _serviceNames = ["1111","2222"];
-
+  List<TvData> _serviceNames = [];
 
   @override
   void initState() {
@@ -59,9 +60,6 @@ class _MyAppState extends State<MyApp> {
                 }, child: Text("初始化")),
                 FlatButton(onPressed: (){
                   Lblelinkplugin.getServicesList((data){
-
-                    print("da is ${data}");
-
                     setState(() {
                      _serviceNames.addAll(data);
 
@@ -85,15 +83,37 @@ class _MyAppState extends State<MyApp> {
                 }, child: Text("结束"))
               ],
             ),
-           Container(
-             height: 400,
-             width: 300,
-             child:  ListView.builder(
-                 itemCount: _serviceNames.length,
-                 itemBuilder: (ctx,index){
-                   return Text(_serviceNames[index]);
-                 }),
-           )
+            Container(
+              height: 400,
+              width: 300,
+              child: ListView.separated(
+                itemCount: _serviceNames.length,
+                itemBuilder: (ctx, index) {
+                  return GestureDetector(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text("设备名称：${_serviceNames[index].name}"),
+                        Text("Uid：${_serviceNames[index].uId}"),
+                      ],
+                    ),
+                    onTap: () {
+                      Lblelinkplugin.connectToService(_serviceNames[index].uId, fConnectListener: (){
+                        Lblelinkplugin.play(
+                            'http://v.mifile.cn/b2c-mimall-media/ed921294fb62caf889d40502f5b38147.mp4');
+                      }, fDisConnectListener: (){
+
+                      });
+                    },
+                  );
+                },
+                separatorBuilder: (BuildContext context, int index) =>
+                    Container(
+                      color: Colors.grey,
+                      height: 1,
+                    ),
+              ),
+            )
           ],
         ),
       ),
