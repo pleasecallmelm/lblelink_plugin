@@ -60,15 +60,18 @@ class LMLBSDKManager: NSObject {
             }
         }
         
+//        self.linkConnection.lelinkService = self.services[0]
+//        self.linkConnection.connect();
+        
         if let c = currentService{
-         
+
             self.linkConnection.lelinkService = c
             self.linkConnection.connect();
-            
+
         }else{
-            
+
             print("设备无效/找不到该设备");
-            
+
         }
         
     }

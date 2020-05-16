@@ -73,7 +73,16 @@ class _MyAppState extends State<MyApp> {
                 }, child: Text("连接设备")),
                 FlatButton(onPressed: (){
                   Lblelinkplugin.play('http://pullhls80d25490.live.126.net/live/7d9cc146131245ddbf2126d56c699191/playlist.m3u8');
-                }, child: Text("开始投屏"))
+                }, child: Text("开始投屏")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.pause();
+                }, child: Text("暂停")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.resumePlay();
+                }, child: Text("继续")),
+                FlatButton(onPressed: (){
+                  Lblelinkplugin.stop();
+                }, child: Text("结束"))
               ],
             ),
            Container(
