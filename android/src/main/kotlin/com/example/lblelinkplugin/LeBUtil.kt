@@ -6,6 +6,7 @@ import com.hpplay.sdk.source.api.IConnectListener
 import com.hpplay.sdk.source.api.ILelinkPlayerListener
 import com.hpplay.sdk.source.api.LelinkPlayerInfo
 import com.hpplay.sdk.source.api.LelinkSourceSDK
+import com.hpplay.sdk.source.browse.api.IAPI
 import com.hpplay.sdk.source.browse.api.LelinkServiceInfo
 import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodChannel
@@ -16,7 +17,7 @@ class LeBUtil private constructor() {
     var events: EventChannel.EventSink? = null
     val sdk: LelinkSourceSDK = LelinkSourceSDK.getInstance()
     val deviceList = mutableListOf<LelinkServiceInfo>()
-
+    var selectLelinkServiceInfo : LelinkServiceInfo? = null
 
     private fun initListener() {
         sdk.run {
@@ -36,54 +37,80 @@ class LeBUtil private constructor() {
             }
             setConnectListener(object : IConnectListener {
                 override fun onConnect(p0: LelinkServiceInfo?, p1: Int) {
-
+                    Observable.just(p0).observeOn(AndroidSchedulers.mainThread()).subscribe {
+                        events?.success(
+                                buildResult(ResultType.connect, null)
+                        )
+                        Log.d("乐播云","连接成功")
+                        playListener()
+                    }
                 }
 
                 override fun onDisconnect(p0: LelinkServiceInfo?, p1: Int, p2: Int) {
 
                 }
             })
-            setPlayListener(object : ILelinkPlayerListener {
-                override fun onLoading() {
-    //                    events?.success( buildResult(ResultType.load))
-                }
 
-                override fun onPause() {
-                    events?.success(Result().addParam("type", ResultType.pause))
-                }
-
-                override fun onCompletion() {
-                    events?.success(Result().addParam("type", ResultType.complete))
-                }
-
-                override fun onStop() {
-                    events?.success(Result().addParam("type", ResultType.stop))
-                }
-
-                override fun onSeekComplete(p0: Int) {
-                    events?.success(Result().addParam("type", ResultType.seek))
-                }
-
-                override fun onInfo(p0: Int, p1: Int) {
-                    events?.success(Result().addParam("type", ResultType.info))
-                }
-
-                override fun onVolumeChanged(p0: Float) {
-                }
-
-                override fun onPositionUpdate(p0: Long, p1: Long) {
-                    events?.success(Result().addParam("type", ResultType.position))
-                }
-
-                override fun onError(p0: Int, p1: Int) {
-                    events?.success(Result().addParam("type", ResultType.error))
-                }
-
-                override fun onStart() {
-                    events?.success(Result().addParam("type", ResultType.start))
-                }
-            })
         }
+    }
+
+    private fun LelinkSourceSDK.playListener() {
+        setPlayListener(object : ILelinkPlayerListener {
+            override fun onLoading() {
+                Log.d("乐播云", "onLoading")
+                //                    events?.success( buildResult(ResultType.load))
+            }
+
+            override fun onPause() {
+                Log.d("乐播云", "onPause")
+                Observable.just(1).observeOn(AndroidSchedulers.mainThread()).subscribe {
+                    events?.success(buildResult(ResultType.pause, null))
+                }
+//                events?.success(Result().addParam("type", ResultType.pause))
+            }
+
+            override fun onCompletion() {
+                Log.d("乐播云", "onCompletion")
+//                events?.success(Result().addParam("type", ResultType.complete))
+            }
+
+            override fun onStop() {
+                Log.d("乐播云", "onStop")
+//                events?.success(Result().addParam("type", ResultType.stop))
+            }
+
+            override fun onSeekComplete(p0: Int) {
+                Log.d("乐播云", "onSeekComplete")
+//                events?.success(Result().addParam("type", ResultType.seek))
+            }
+
+            override fun onInfo(p0: Int, p1: Int) {
+                Log.d("乐播云", "onInfo")
+//                events?.success(Result().addParam("type", ResultType.info))
+            }
+
+            override fun onVolumeChanged(p0: Float) {
+                Log.d("乐播云", "onVolumeChanged")
+            }
+
+            override fun onPositionUpdate(p0: Long, p1: Long) {
+                Log.d("乐播云", "onPositionUpdate")
+//                events?.success(Result().addParam("type", ResultType.position))
+            }
+
+            override fun onError(p0: Int, p1: Int) {
+                Log.d("乐播云", "onError")
+//                events?.success(Result().addParam("type", ResultType.error))
+            }
+
+            override fun onStart() {
+                Log.d("乐播云", "star");
+                Observable.just(1).observeOn(AndroidSchedulers.mainThread()).subscribe {
+                    events?.success(buildResult(ResultType.start, null))
+                }
+
+            }
+        })
     }
 
     companion object {
@@ -94,11 +121,8 @@ class LeBUtil private constructor() {
 
     ///初始化SDK
     fun initUtil(ctx: Context, appId: String, secret: String, result: MethodChannel.Result) {
-        Log.d("乐播云注册id", appId)
-        Log.d("乐播云注册secret", secret)
         sdk.bindSdk(ctx, appId, secret) {
             Observable.just(it).observeOn(AndroidSchedulers.mainThread()).subscribe { result.success(it) }
-            Log.d("乐播云注册", it.toString())
             if (it) {
                 sdk.setDebugMode(true)
                 initListener()
@@ -108,21 +132,25 @@ class LeBUtil private constructor() {
 
     ///连接设备
     fun connectService(id: String, name: String) {
-        var connectData: LelinkServiceInfo? = null
         deviceList.forEach {
             //循环数据
-            if (id == it.uid && name == it.name) {//确定连接项
-                connectData = it
+            if (id == it.uid) {//确定连接项
+                selectLelinkServiceInfo = it
             }
         }
-        connectData?.run {
-            sdk.connect(this)
-        }
-
+//        sdk.connect(selectLelinkServiceInfo)
+        events?.success(
+                buildResult(ResultType.connect, null)
+        )
     }
 
-    fun buildResult(type: Int, map: Any): Map<String, Any> {
-        return mapOf<String, Any>("type" to type, "data" to map)
+    fun buildResult(type: Int, data: Any?): Map<String, Any> {
+        val map = mutableMapOf<String, Any>()
+        map["type"] = type
+        data?.run {
+            map["data"] = this
+        }
+        return map
     }
 
     ///设备断链
@@ -159,7 +187,13 @@ class LeBUtil private constructor() {
     }
 
     fun play(url: String) {
-        sdk.startPlayMedia(url, LelinkPlayerInfo.TYPE_VIDEO, false)
+        sdk.resume()
+        var playerInfo = LelinkPlayerInfo()
+        playerInfo.url = url
+        playerInfo.loopMode = LelinkPlayerInfo.LOOP_MODE_SINGLE
+        playerInfo.type = LelinkSourceSDK.MEDIA_TYPE_VIDEO
+        playerInfo.lelinkServiceInfo = selectLelinkServiceInfo
+        sdk.startPlayMedia(playerInfo)
     }
 
     fun initEvent(events: EventChannel.EventSink?) {
