@@ -31,13 +31,14 @@ class Lblelinkplugin {
         case 1:
           _connectListener?.call();
           break;
-        case 3:
-          print("开始了开始了");
-          break;
-        case 4:
-          print("暂停了暂停了");
+//        case 3:
+//          print("开始了开始了");
+//          break;
+//        case 4:
+//          print("暂停了暂停了");
           break;
         default:
+          print(data["data"]);
           break;
       }
     });

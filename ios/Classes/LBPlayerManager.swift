@@ -38,7 +38,6 @@ class LBPlayerManager: NSObject {
     //退出播放
     func stop(){
         self.player.stop()
-    
     }
     
     //增加音量
