@@ -9,17 +9,17 @@ import UIKit
 import LBLelinkKit
 
 enum ResultType: Int {
-    case disConnect = -1;
-    case divice = 0;
-    case connect = 1;
-    case load = 2;
+    case disConnect = -1; //nothing
+    case divice = 0;   //列表
+    case connect = 1; //nothing
+    case load = 2; //nothing
     case start = 3;
     case pause = 4;
     case complete = 5;
     case stop = 6;
     case seek = 7;
     case info = 8;
-    case error = 9;
+    case error = 9; //error
     case position = 10;
 }
 

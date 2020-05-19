@@ -55,6 +55,7 @@ class Lblelinkplugin {
           _lbCallBack.error();
           break;
         default:
+          print(data["data"]);
           break;
       }
     });
@@ -97,6 +98,7 @@ class Lblelinkplugin {
     _disConnectListener = fDisConnectListener;
     _channel.invokeMethod("connectToService", {"tvUID": tvUID});
   }
+
 
   //断开连接
   static disConnect() {
