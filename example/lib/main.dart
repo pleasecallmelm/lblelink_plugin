@@ -70,12 +70,12 @@ class _MyAppState extends State<MyApp> {
                       });
                     },
                     child: Text("搜索设备")),
-                FlatButton(
-                    onPressed: () {
-                      Lblelinkplugin.connectToService("123",
-                          fConnectListener: () {}, fDisConnectListener: () {});
-                    },
-                    child: Text("连接设备")),
+//                FlatButton(
+//                    onPressed: () {
+//                      Lblelinkplugin.connectToService(_serviceNames[0].uId,
+//                          fConnectListener: () {}, fDisConnectListener: () {});
+//                    },
+//                    child: Text("连接设备")),
                 FlatButton(
                     onPressed: () {
                       Lblelinkplugin.play(
@@ -110,11 +110,11 @@ class _MyAppState extends State<MyApp> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text("设备名称：${_serviceNames[index].name}"),
-                        Text("Uid：${_serviceNames[index].uId}"),
+                        Text("ipAddress：${_serviceNames[index].ipAddress}"),
                       ],
                     ),
                     onTap: () {
-                      Lblelinkplugin.connectToService(_serviceNames[index].uId,
+                      Lblelinkplugin.connectToService(_serviceNames[index].ipAddress,
                           fConnectListener: () {}, fDisConnectListener: () {});
                     },
                   );

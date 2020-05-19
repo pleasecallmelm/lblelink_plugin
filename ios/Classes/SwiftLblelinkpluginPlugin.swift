@@ -23,7 +23,7 @@ public class SwiftLblelinkpluginPlugin: NSObject, FlutterPlugin {
             LMLBSDKManager.shareInstance.beginSearchEquipment()
         break
         case "connectToService":
-            LMLBSDKManager.shareInstance.linkToService(tvUID: dict?["tvUID"] ?? "");
+            LMLBSDKManager.shareInstance.linkToService(ipAddress: dict?["ipAddress"] ?? "");
         break
         case "disConnect":
             LMLBSDKManager.shareInstance.disConnect();

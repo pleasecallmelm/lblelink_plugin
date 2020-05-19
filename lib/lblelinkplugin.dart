@@ -92,12 +92,12 @@ class Lblelinkplugin {
   }
 
   //连接设备(参数未定)
-  static connectToService(String tvUID,
+  static connectToService(String ipAddress,
       {@required Function fConnectListener,
       @required Function fDisConnectListener}) {
     _connectListener = fConnectListener;
     _disConnectListener = fDisConnectListener;
-    _channel.invokeMethod("connectToService", {"tvUID": tvUID});
+    _channel.invokeMethod("connectToService", {"ipAddress": ipAddress});
   }
 
 

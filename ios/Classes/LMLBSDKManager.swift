@@ -17,7 +17,7 @@ class LMLBSDKManager: NSObject {
     func initLBSDK(appid: String,secretKey: String,result: @escaping FlutterResult){
         
         #if DEBUG
-       //     LBLelinkKit.enableLog(true);
+           LBLelinkKit.enableLog(true);
         #else
         
         #endif
@@ -49,19 +49,16 @@ class LMLBSDKManager: NSObject {
     }
     
     //连接设备
-    func linkToService(tvUID: String) {
+    func linkToService(ipAddress: String) {
         
         var currentService:LBLelinkService?
         
         for item in self.services {
-            if (item.tvUID == tvUID){
+            if (item.ipAddress == ipAddress){
                 currentService = item;
                 break;
             }
         }
-        
-//        self.linkConnection.lelinkService = self.services[0]
-//        self.linkConnection.connect();
         
         if let c = currentService{
 
@@ -135,6 +132,7 @@ extension LMLBSDKManager: LBLelinkConnectionDelegate{
    func lelinkConnection(_ connection: LBLelinkConnection, didConnectTo service: LBLelinkService) {
        
        print("连接成功");
+    
     LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .connect, des: "连接\(service.lelinkServiceName)成功")
     
    }

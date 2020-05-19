@@ -16,7 +16,8 @@ class TvListResult {
     data.forEach((info) {
       tvList.add(TvData()
         ..name = info["tvName"]
-        ..uId = info["tvUID"]);
+        ..uId = info["tvUID"]
+        ..ipAddress = info["ipAddress"]);
     });
   }
 }
@@ -24,4 +25,5 @@ class TvListResult {
 class TvData {
   String name;
   String uId;
+  String ipAddress;
 }

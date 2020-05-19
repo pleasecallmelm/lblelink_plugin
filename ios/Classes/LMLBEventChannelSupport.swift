@@ -59,9 +59,11 @@ class LMLBEventChannelSupport: NSObject,FlutterPlugin, FlutterStreamHandler{
                 
                 let dict: [String:String] = [
                     "tvName": item.lelinkServiceName,
-                    "tvUID": item.tvUID
+                    "tvUID": item.tvUID == nil ? "":item.tvUID,
+                    "ipAddress":item.ipAddress
                 ];
                 a.append(dict);
+                
             }
             
             sink(self.createResult(type: .divice, data: a));
