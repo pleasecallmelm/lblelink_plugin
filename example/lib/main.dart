@@ -99,8 +99,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                     onTap: () {
                       Lblelinkplugin.connectToService(_serviceNames[index].uId, fConnectListener: (){
-                        Lblelinkplugin.play(
-                            'http://v.mifile.cn/b2c-mimall-media/ed921294fb62caf889d40502f5b38147.mp4');
+
                       }, fDisConnectListener: (){
 
                       });
@@ -119,4 +118,5 @@ class _MyAppState extends State<MyApp> {
       ),
     );
   }
+
 }

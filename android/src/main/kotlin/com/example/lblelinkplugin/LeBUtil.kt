@@ -2,6 +2,7 @@ package com.example.lblelinkplugin
 
 import android.content.Context
 import android.util.Log
+import androidx.annotation.NonNull
 import com.hpplay.sdk.source.api.IConnectListener
 import com.hpplay.sdk.source.api.ILelinkPlayerListener
 import com.hpplay.sdk.source.api.LelinkPlayerInfo
@@ -174,9 +175,14 @@ class LeBUtil private constructor() {
     }
 
     ///设备断链
-    fun disConnect() {
+    fun disConnect( @NonNull result: MethodChannel.Result) {
         sdk.connectInfos.run {
-            sdk.disConnect(this[0])
+            if(sdk.disConnect(this[0])){
+                result.success(0)
+            }else{
+                result.success(-1)
+            }
+
         }
     }
 

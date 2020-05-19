@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:lblelinkplugin/tv_list.dart';
+
 class Lblelinkplugin {
   static const MethodChannel _channel = const MethodChannel('lblelinkplugin');
   static const EventChannel _eventChannel =
@@ -13,8 +14,12 @@ class Lblelinkplugin {
 
   static Function _connectListener;
   static Function _disConnectListener;
+  static LbCallBack _lbCallBack;
 
-  //eventChannel监听分发中心
+  static set lbCallBack(LbCallBack value) {
+    _lbCallBack = value;
+  } //eventChannel监听分发中心
+
   static eventChannelDistribution() {
     _eventChannel.receiveBroadcastStream().listen((data) {
       print(data);
@@ -31,11 +36,23 @@ class Lblelinkplugin {
         case 1:
           _connectListener?.call();
           break;
+        case 2:
+          _lbCallBack.loading();
+          break;
         case 3:
-          print("开始了开始了");
+          _lbCallBack.start();
           break;
         case 4:
-          print("暂停了暂停了");
+          _lbCallBack.pause();
+          break;
+        case 5:
+          _lbCallBack.pause();
+          break;
+        case 6:
+          _lbCallBack.stop();
+          break;
+        case 9:
+          _lbCallBack.error();
           break;
         default:
           break;
@@ -73,16 +90,21 @@ class Lblelinkplugin {
   }
 
   //连接设备(参数未定)
-  static connectToService(String tvUID,{@required Function fConnectListener,@required Function fDisConnectListener}) {
+  static connectToService(String tvUID,
+      {@required Function fConnectListener,
+      @required Function fDisConnectListener}) {
     _connectListener = fConnectListener;
     _disConnectListener = fDisConnectListener;
     _channel.invokeMethod("connectToService", {"tvUID": tvUID});
   }
 
-
   //断开连接
   static disConnect() {
-    _channel.invokeMethod("disConnect");
+    _channel.invokeMethod("disConnect").then((data){
+      if(data == 0){
+        _disConnectListener.call();
+      }
+    });
   }
 
   //暂停
@@ -109,4 +131,18 @@ class Lblelinkplugin {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
+}
+
+abstract class LbCallBack {
+  void start();
+
+  void loading();
+
+  void complete();
+
+  void pause();
+
+  void stop();
+
+  void error();
 }
