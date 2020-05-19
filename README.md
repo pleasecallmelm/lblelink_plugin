@@ -31,8 +31,8 @@ Lblelinkplugin.getServicesList((data){
 });
 
 //连接设备
-//参数：设备id、连接成功回调、连接断开回调
-Lblelinkplugin.connectToService("123", fConnectListener: (){
+//参数：设备ip地址、连接成功回调、连接断开回调
+Lblelinkplugin.connectToService("192.168.0.1", fConnectListener: (){
 
                   }, fDisConnectListener: (){
 
