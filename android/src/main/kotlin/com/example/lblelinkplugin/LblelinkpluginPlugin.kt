@@ -64,7 +64,7 @@ public class LblelinkpluginPlugin : FlutterPlugin, MethodCallHandler {
         }
       }
       "connectToService" -> {
-        LeBUtil.instance.connectService(call.argument<String>("tvUID")!!, "")
+        LeBUtil.instance.connectService(call.argument<String>("ipAddress")!!, "")
       }
       "disConnect" -> {
         LeBUtil.instance.disConnect(result)

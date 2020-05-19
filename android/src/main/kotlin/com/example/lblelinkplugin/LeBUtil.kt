@@ -27,7 +27,7 @@ class LeBUtil private constructor() {
                 deviceList.addAll(resultList)
 
                 var finalList = deviceList.map {
-                    mapOf("tvName" to it.name, "tvUID" to it.uid)
+                    mapOf("tvName" to it.name, "tvUID" to it.uid, "ipAddress" to it.ip)
                 }.toList()
                 Observable.just(resultList).observeOn(AndroidSchedulers.mainThread()).subscribe {
                     events?.success(
@@ -155,7 +155,7 @@ class LeBUtil private constructor() {
     fun connectService(id: String, name: String) {
         deviceList.forEach {
             //循环数据
-            if (id == it.uid) {//确定连接项
+            if (id == it.ip) {//确定连接项
                 selectLelinkServiceInfo = it
             }
         }
@@ -175,11 +175,11 @@ class LeBUtil private constructor() {
     }
 
     ///设备断链
-    fun disConnect( @NonNull result: MethodChannel.Result) {
+    fun disConnect(@NonNull result: MethodChannel.Result) {
         sdk.connectInfos.run {
-            if(sdk.disConnect(this[0])){
+            if (sdk.disConnect(this[0])) {
                 result.success(0)
-            }else{
+            } else {
                 result.success(-1)
             }
 
