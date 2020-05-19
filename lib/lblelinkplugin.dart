@@ -38,22 +38,22 @@ class Lblelinkplugin {
           _connectListener?.call();
           break;
         case 2:
-          _lbCallBack.loading();
+          _lbCallBack.loadingCallBack();
           break;
         case 3:
-          _lbCallBack.start();
+          _lbCallBack.startCallBack();
           break;
         case 4:
-          _lbCallBack.pause();
+          _lbCallBack.pauseCallBack();
           break;
         case 5:
-          _lbCallBack.pause();
+          _lbCallBack.pauseCallBack();
           break;
         case 6:
-          _lbCallBack.stop();
+          _lbCallBack.stopCallBack();
           break;
         case 9:
-          _lbCallBack.error();
+          _lbCallBack.errorCallBack(data["data"]);
           break;
         default:
           print(data["data"]);
@@ -138,15 +138,16 @@ class Lblelinkplugin {
 }
 
 abstract class LbCallBack {
-  void start();
+  void startCallBack();
 
-  void loading();
+  void loadingCallBack();
 
-  void complete();
+  void completeCallBack();
 
-  void pause();
+  void pauseCallBack();
 
-  void stop();
+  void stopCallBack();
 
-  void error();
+  void errorCallBack(String errorDes);
+
 }

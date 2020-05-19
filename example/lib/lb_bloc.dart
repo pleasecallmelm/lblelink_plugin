@@ -51,32 +51,32 @@ class LBbloc with LbCallBack {
   }
 
   @override
-  void complete() {
+  void completeCallBack() {
     // 完成事件回调
   }
 
   @override
-  void error() {
+  void errorCallBack(String errorDes) {
     // 错误事件回调
   }
 
   @override
-  void loading() {
+  void loadingCallBack() {
     // 加载中事件回调
   }
 
   @override
-  void start() {
+  void startCallBack() {
     // 开始事件回调
   }
 
   @override
-  void pause() {
+  void pauseCallBack() {
     // 暂停事件回调
   }
 
   @override
-  void stop() {
+  void stopCallBack() {
     // 停止事件回调
   }
 }
