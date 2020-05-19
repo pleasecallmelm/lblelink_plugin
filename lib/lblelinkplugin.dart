@@ -27,6 +27,7 @@ class Lblelinkplugin {
 
       switch (type) {
         case -1:
+          _disConnectListener.call();
           break;
         case 0:
           TvListResult _tvList = TvListResult();
@@ -102,11 +103,12 @@ class Lblelinkplugin {
 
   //断开连接
   static disConnect() {
-    _channel.invokeMethod("disConnect").then((data){
-      if(data == 0){
-        _disConnectListener.call();
-      }
-    });
+    _channel.invokeMethod("disConnect");
+//        .then((data){
+//      if(data == 0){
+//        _disConnectListener.call();
+//      }
+//    });
   }
 
   //暂停
