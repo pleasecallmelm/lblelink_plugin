@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
     // message was in flight, we want to discard the reply rather than calling
     // setState to update our non-existent appearance.
     if (!mounted) return;
-
+    Lblelinkplugin.eventChannelDistribution();
     setState(() {
       _platformVersion = platformVersion;
     });
@@ -83,7 +83,7 @@ class _MyAppState extends State<MyApp> {
                 FlatButton(
                     onPressed: () {
                       Lblelinkplugin.play(
-                          'http://pullhls80d25490.live.126.net/live/7d9cc146131245ddbf2126d56c699191/playlist.m3u8');
+                          'http://v.mifile.cn/b2c-mimall-media/ed921294fb62caf889d40502f5b38147.mp4');
                     },
                     child: Text("开始投屏")),
                 FlatButton(

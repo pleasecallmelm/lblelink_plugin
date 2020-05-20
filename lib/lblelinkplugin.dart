@@ -37,22 +37,22 @@ class Lblelinkplugin {
           _connectListener?.call();
           break;
         case 2:
-          _lbCallBack.loadingCallBack();
+          _lbCallBack?.loadingCallBack();
           break;
         case 3:
-          _lbCallBack.startCallBack();
+          _lbCallBack?.startCallBack();
           break;
         case 4:
-          _lbCallBack.pauseCallBack();
+          _lbCallBack?.pauseCallBack();
           break;
         case 5:
-          _lbCallBack.pauseCallBack();
+          _lbCallBack?.pauseCallBack();
           break;
         case 6:
-          _lbCallBack.stopCallBack();
+          _lbCallBack?.stopCallBack();
           break;
         case 9:
-          _lbCallBack.errorCallBack(data["data"]);
+          _lbCallBack?.errorCallBack(data["data"]);
           break;
         default:
           print(data["data"]);
@@ -64,14 +64,15 @@ class Lblelinkplugin {
   //初始化sdk
   //返回值：初始化成功与否
   static Future<bool> initLBSdk(String appid, String secretKey) async {
+    //初始化的时候注册eventChannel回调
+    eventChannelDistribution();
     return _channel
         .invokeMethod("initLBSdk", {"appid": appid, "secretKey": secretKey}).then((data){
 
           return data;
     });
 
-    //初始化的时候注册eventChannel回调
-    eventChannelDistribution();
+
   }
 
   //获取设备列表
