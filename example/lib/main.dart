@@ -57,8 +57,12 @@ class _MyAppState extends State<MyApp> {
               children: <Widget>[
                 FlatButton(
                     onPressed: () {
-                      Lblelinkplugin.initLBSdk(
-                          "14342", "c67255e53e3feee87673bc67f6895360");
+                      if (Platform.isIOS)
+                        Lblelinkplugin.initLBSdk(
+                            "14342", "c67255e53e3feee87673bc67f6895360");
+                      else
+                        Lblelinkplugin.initLBSdk(
+                            "14345", "596d9df457fb194f6944c9bc51e8343d");
                     },
                     child: Text("初始化")),
                 FlatButton(

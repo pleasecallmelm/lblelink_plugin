@@ -7,7 +7,6 @@ import com.hpplay.sdk.source.api.IConnectListener
 import com.hpplay.sdk.source.api.ILelinkPlayerListener
 import com.hpplay.sdk.source.api.LelinkPlayerInfo
 import com.hpplay.sdk.source.api.LelinkSourceSDK
-import com.hpplay.sdk.source.browse.api.IAPI
 import com.hpplay.sdk.source.browse.api.LelinkServiceInfo
 import io.flutter.plugin.common.EventChannel
 import io.flutter.plugin.common.MethodChannel
@@ -19,6 +18,10 @@ class LeBUtil private constructor() {
     val sdk: LelinkSourceSDK = LelinkSourceSDK.getInstance()
     val deviceList = mutableListOf<LelinkServiceInfo>()
     var selectLelinkServiceInfo: LelinkServiceInfo? = null
+
+    var lastLinkIp by SharedPreference("lastLinkIp","")
+    var lastLinkName by SharedPreference("lastLinkName","")
+    var lastLinkUid by SharedPreference("lastLinkUid","")
 
     private fun initListener() {
         sdk.run {
@@ -42,6 +45,11 @@ class LeBUtil private constructor() {
                         events?.success(
                                 buildResult(ResultType.connect, "connect")
                         )
+                        p0!!.run {
+                            lastLinkIp = ip
+                            lastLinkName = name
+                            lastLinkUid = uid
+                        }
                         Log.d("乐播云", "连接成功")
                         playListener()
                     }
@@ -126,6 +134,7 @@ class LeBUtil private constructor() {
 
             override fun onStart() {
                 Log.d("乐播云", "star");
+
                 Observable.just(1).observeOn(AndroidSchedulers.mainThread()).subscribe {
                     events?.success(buildResult(ResultType.start, "start"))
                 }
@@ -228,6 +237,10 @@ class LeBUtil private constructor() {
 
     fun removeEvent() {
         events = null
+    }
+
+    fun getLastIp(result: MethodChannel.Result) {
+        result.success(mapOf("tvName" to lastLinkName, "tvUID" to lastLinkUid, "ipAddress" to lastLinkIp))
     }
 
 }
