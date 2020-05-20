@@ -73,6 +73,27 @@ class LMLBSDKManager: NSObject {
         
     }
     
+    //获取上次连接的设备
+    func getLastConnectService(result: @escaping FlutterResult){
+        
+        let lastServices = self.linkBrowser.lastServices()
+        
+        let ser = lastServices?[0]
+        
+        if let item = ser{
+        
+            let dict: [String:String] = [
+                "tvName": item.lelinkServiceName,
+                "tvUID": item.tvUID == nil ? "":item.tvUID,
+                "ipAddress":item.ipAddress
+            ];
+           
+            result(dict);
+        }
+        
+    }
+    
+    
     //断开连接
     func disConnect(){
         self.linkConnection.disConnect();
@@ -133,7 +154,13 @@ extension LMLBSDKManager: LBLelinkConnectionDelegate{
        
        print("连接成功");
     
-    LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .connect, des: "连接\(service.lelinkServiceName)成功")
+    for item in self.linkBrowser.lastServices() {
+        self.linkBrowser.deleteLelinkService(item)
+    }
+    //连接成功的话保存该设备
+    self.linkBrowser.save([service])
+    
+    LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .connect, des: "连接\(String(describing: service.lelinkServiceName))成功")
     
    }
 
@@ -141,7 +168,7 @@ extension LMLBSDKManager: LBLelinkConnectionDelegate{
     func lelinkConnection(_ connection: LBLelinkConnection, disConnectTo service: LBLelinkService) {
         print("连接断开");
         
-         LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .disConnect, des: "与\(service.lelinkServiceName)断开连接")
+        LMLBEventChannelSupport.sharedInstance.sendCommonDesToFlutter(type: .disConnect, des: "与\(String(describing: service.lelinkServiceName))断开连接")
         
     }
     

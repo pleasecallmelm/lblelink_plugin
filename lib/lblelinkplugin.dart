@@ -66,7 +66,10 @@ class Lblelinkplugin {
   //返回值：初始化成功与否
   static Future<bool> initLBSdk(String appid, String secretKey) async {
     await _channel
-        .invokeMethod("initLBSdk", {"appid": appid, "secretKey": secretKey});
+        .invokeMethod("initLBSdk", {"appid": appid, "secretKey": secretKey}).then((data){
+
+          return data;
+    });
 
     //初始化的时候注册eventChannel回调
     eventChannelDistribution();
@@ -98,6 +101,15 @@ class Lblelinkplugin {
     _connectListener = fConnectListener;
     _disConnectListener = fDisConnectListener;
     _channel.invokeMethod("connectToService", {"ipAddress": ipAddress});
+  }
+
+  //获取上次连接的设备
+  static Future<TvData> getLastConnectService() async{
+    _channel.invokeMethod("getLastConnectService").then((data){
+
+      return TvData()..uId = data["tvUID"]..name = data["tvName"]..ipAddress = data["ipAddress"];
+
+    });
   }
 
 
@@ -138,16 +150,28 @@ class Lblelinkplugin {
 }
 
 abstract class LbCallBack {
-  void startCallBack();
+  void startCallBack(){
 
-  void loadingCallBack();
+  }
 
-  void completeCallBack();
+  void loadingCallBack(){
 
-  void pauseCallBack();
+  }
 
-  void stopCallBack();
+  void completeCallBack(){
 
-  void errorCallBack(String errorDes);
+  }
+
+  void pauseCallBack(){
+
+  }
+
+  void stopCallBack(){
+
+  }
+
+  void errorCallBack(String errorDes){
+
+  }
 
 }
