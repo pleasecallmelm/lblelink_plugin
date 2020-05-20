@@ -65,7 +65,7 @@ class Lblelinkplugin {
   //初始化sdk
   //返回值：初始化成功与否
   static Future<bool> initLBSdk(String appid, String secretKey) async {
-    await _channel
+    return _channel
         .invokeMethod("initLBSdk", {"appid": appid, "secretKey": secretKey}).then((data){
 
           return data;
@@ -105,7 +105,7 @@ class Lblelinkplugin {
 
   //获取上次连接的设备
   static Future<TvData> getLastConnectService(){
-    _channel.invokeMethod("getLastConnectService").then((data){
+    return _channel.invokeMethod("getLastConnectService").then((data){
 
       print("data is ${data}");
       
