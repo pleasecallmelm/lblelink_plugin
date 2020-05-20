@@ -84,7 +84,12 @@ class _MyAppState extends State<MyApp> {
                     child: Text("开始投屏")),
                 FlatButton(
                     onPressed: () {
-                      Lblelinkplugin.pause();
+//                      Lblelinkplugin.pause();
+
+                      Lblelinkplugin.getLastConnectService().then((data){
+                        print("******${data.ipAddress},${data.name},${data.uId}");
+                      });
+                    
                     },
                     child: Text("暂停")),
                 FlatButton(

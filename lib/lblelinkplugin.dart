@@ -104,9 +104,11 @@ class Lblelinkplugin {
   }
 
   //获取上次连接的设备
-  static Future<TvData> getLastConnectService() async{
+  static Future<TvData> getLastConnectService(){
     _channel.invokeMethod("getLastConnectService").then((data){
 
+      print("data is ${data}");
+      
       return TvData()..uId = data["tvUID"]..name = data["tvName"]..ipAddress = data["ipAddress"];
 
     });
