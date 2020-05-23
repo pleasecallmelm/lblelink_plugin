@@ -87,6 +87,9 @@ public class LblelinkpluginPlugin : FlutterPlugin, MethodCallHandler {
       "play" -> {
         LeBUtil.instance.play(call.argument<String>("playUrlString")!!)
       }
+      "getLastConnectService"->{
+        LeBUtil.instance.getLastIp(result)
+      }
     }
   }
 
