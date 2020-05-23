@@ -22,6 +22,8 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     initPlatformState();
+
+
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -59,6 +61,7 @@ class _MyAppState extends State<MyApp> {
                     onPressed: () {
                       Lblelinkplugin.initLBSdk(
                           "14342", "c67255e53e3feee87673bc67f6895360");
+                      Lblelinkplugin.eventChannelDistribution();
                     },
                     child: Text("初始化")),
                 FlatButton(

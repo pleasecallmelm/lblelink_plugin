@@ -72,6 +72,7 @@ class Lblelinkplugin {
     });
 
     //初始化的时候注册eventChannel回调
+
     eventChannelDistribution();
   }
 

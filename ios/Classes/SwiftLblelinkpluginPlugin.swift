@@ -2,6 +2,8 @@ import Flutter
 import UIKit
 
 public class SwiftLblelinkpluginPlugin: NSObject, FlutterPlugin {
+    
+    
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "lblelinkplugin", binaryMessenger: registrar.messenger())
     let instance = SwiftLblelinkpluginPlugin()
