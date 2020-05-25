@@ -78,17 +78,20 @@ class LMLBSDKManager: NSObject {
         
         let lastServices = self.linkBrowser.lastServices()
         
-        let ser = lastServices?[0]
+        if lastServices?.count ?? 0 > 0{
         
-        if let item = ser{
-        
-            let dict: [String:String] = [
-                "tvName": item.lelinkServiceName,
-                "tvUID": item.tvUID == nil ? "":item.tvUID,
-                "ipAddress":item.ipAddress
-            ];
-           
-            result(dict);
+            let ser = lastServices?[0]
+            
+            if let item = ser{
+            
+                let dict: [String:String] = [
+                    "tvName": item.lelinkServiceName,
+                    "tvUID": item.tvUID == nil ? "":item.tvUID,
+                    "ipAddress":item.ipAddress
+                ];
+               
+                result(dict);
+            }
         }
         
     }
