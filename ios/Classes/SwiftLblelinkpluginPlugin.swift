@@ -50,6 +50,6 @@ public class SwiftLblelinkpluginPlugin: NSObject, FlutterPlugin {
         break;
     }
     
-    result("iOS " + UIDevice.current.systemVersion)
+    //result("iOS " + UIDevice.current.systemVersion)
   }
 }
