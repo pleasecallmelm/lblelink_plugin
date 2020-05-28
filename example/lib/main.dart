@@ -73,12 +73,17 @@ class _MyAppState extends State<MyApp> {
                       });
                     },
                     child: Text("搜索设备")),
-//                FlatButton(
-//                    onPressed: () {
-//                      Lblelinkplugin.connectToService(_serviceNames[0].uId,
-//                          fConnectListener: () {}, fDisConnectListener: () {});
-//                    },
-//                    child: Text("连接设备")),
+                FlatButton(
+                    onPressed: () {
+
+                      Lblelinkplugin.getLastConnectService().then((value){
+
+                        print("上次设备是：${value}");
+
+                      });
+
+                    },
+                    child: Text("上次设备")),
                 FlatButton(
                     onPressed: () {
                       Lblelinkplugin.play(

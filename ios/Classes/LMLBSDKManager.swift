@@ -91,7 +91,19 @@ class LMLBSDKManager: NSObject {
                 ];
                
                 result(dict);
+            }else{
+                result([
+                    "tvName": "",
+                    "tvUID": "",
+                    "ipAddress":""
+                ])
             }
+        }else{
+            result([
+                "tvName": "",
+                "tvUID": "",
+                "ipAddress":""
+            ])
         }
         
     }

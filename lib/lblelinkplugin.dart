@@ -112,7 +112,11 @@ class Lblelinkplugin {
     return _channel.invokeMethod("getLastConnectService").then((data){
 
       print("data is ${data}");
-      
+
+//      if (data == null){
+//        return data;
+//      }
+
       return TvData()..uId = data["tvUID"]..name = data["tvName"]..ipAddress = data["ipAddress"];
 
     });
